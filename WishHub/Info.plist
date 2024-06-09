@@ -4,7 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>pershotravneva55.ttf</string>
+		<string>Ubuntu-Regular.ttf</string>
+		<string>Ubuntu-Medium.ttf</string>
+		<string>Ubuntu-Bold.ttf</string>
+		<string>PTSansCaption-Regular.ttf</string>
+		<string>Pershotravneva55.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

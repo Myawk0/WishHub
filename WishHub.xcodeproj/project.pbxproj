@@ -42,9 +42,13 @@
 		904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC92C15DBD200D3494B /* BasePresenter.swift */; };
 		904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */; };
 		904FBFDA2C15E19D00D3494B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFD92C15E19D00D3494B /* Colors.xcassets */; };
-		904FBFDD2C15E78200D3494B /* pershotravneva55.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFDC2C15E78200D3494B /* pershotravneva55.ttf */; };
+		904FBFDD2C15E78200D3494B /* Pershotravneva55.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFDC2C15E78200D3494B /* Pershotravneva55.ttf */; };
 		904FBFE02C15E80D00D3494B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFDF2C15E80D00D3494B /* Fonts.swift */; };
 		904FBFE32C15E85300D3494B /* BaseFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFE22C15E85300D3494B /* BaseFonts.swift */; };
+		904FBFE92C15EFAA00D3494B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE42C15EFA900D3494B /* Ubuntu-Medium.ttf */; };
+		904FBFEA2C15EFAA00D3494B /* PTSansCaption-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE52C15EFA900D3494B /* PTSansCaption-Regular.ttf */; };
+		904FBFEB2C15EFAA00D3494B /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE62C15EFAA00D3494B /* Ubuntu-Bold.ttf */; };
+		904FBFED2C15EFAA00D3494B /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE82C15EFAA00D3494B /* Ubuntu-Regular.ttf */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -85,9 +89,13 @@
 		904FBFC92C15DBD200D3494B /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		904FBFD92C15E19D00D3494B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		904FBFDC2C15E78200D3494B /* pershotravneva55.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pershotravneva55.ttf; sourceTree = "<group>"; };
+		904FBFDC2C15E78200D3494B /* Pershotravneva55.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pershotravneva55.ttf; sourceTree = "<group>"; };
 		904FBFDF2C15E80D00D3494B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		904FBFE22C15E85300D3494B /* BaseFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFonts.swift; sourceTree = "<group>"; };
+		904FBFE42C15EFA900D3494B /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		904FBFE52C15EFA900D3494B /* PTSansCaption-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSansCaption-Regular.ttf"; sourceTree = "<group>"; };
+		904FBFE62C15EFAA00D3494B /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		904FBFE82C15EFAA00D3494B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -305,7 +313,11 @@
 		904FBFDB2C15E77300D3494B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				904FBFDC2C15E78200D3494B /* pershotravneva55.ttf */,
+				904FBFE52C15EFA900D3494B /* PTSansCaption-Regular.ttf */,
+				904FBFE62C15EFAA00D3494B /* Ubuntu-Bold.ttf */,
+				904FBFE42C15EFA900D3494B /* Ubuntu-Medium.ttf */,
+				904FBFE82C15EFAA00D3494B /* Ubuntu-Regular.ttf */,
+				904FBFDC2C15E78200D3494B /* Pershotravneva55.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -427,8 +439,12 @@
 			files = (
 				9068A2A12C11E7DB00FBE63F /* LaunchScreen.storyboard in Resources */,
 				904FBFDA2C15E19D00D3494B /* Colors.xcassets in Resources */,
+				904FBFE92C15EFAA00D3494B /* Ubuntu-Medium.ttf in Resources */,
 				904FBF932C15C6D000D3494B /* FriendsLocalization.strings in Resources */,
-				904FBFDD2C15E78200D3494B /* pershotravneva55.ttf in Resources */,
+				904FBFEB2C15EFAA00D3494B /* Ubuntu-Bold.ttf in Resources */,
+				904FBFDD2C15E78200D3494B /* Pershotravneva55.ttf in Resources */,
+				904FBFEA2C15EFAA00D3494B /* PTSansCaption-Regular.ttf in Resources */,
+				904FBFED2C15EFAA00D3494B /* Ubuntu-Regular.ttf in Resources */,
 				9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,8 +642,8 @@
 				INFOPLIST_FILE = WishHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -658,8 +674,8 @@
 				INFOPLIST_FILE = WishHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,10 +9,10 @@ import UIKit
 
 struct Fonts {
     enum Title {
-        static let h1: UIFont = Pershotravneva().get(.medium, 22)
-        static let h2: UIFont = Pershotravneva().get(.medium, 18)
-        static let h3: UIFont = Pershotravneva().get(.medium, 16)
-        static let h4: UIFont = Pershotravneva().get(.medium, 14)
+        static let h1: UIFont = Pershotravneva().get(.regular, 22)
+        static let h2: UIFont = Pershotravneva().get(.regular, 18)
+        static let h3: UIFont = Pershotravneva().get(.regular, 16)
+        static let h4: UIFont = Pershotravneva().get(.regular, 14)
     }
     
     enum Body {
@@ -22,24 +22,24 @@ struct Fonts {
     }
     
     enum Label {
-        static let large: UIFont = Pershotravneva().get(.regular, 16)
-        static let medium: UIFont = Pershotravneva().get(.regular, 14)
-        static let small: UIFont = Pershotravneva().get(.regular, 12)
+        static let large: UIFont = Ubuntu().get(.bold, 16)
+        static let medium: UIFont = Ubuntu().get(.medium, 14)
+        static let small: UIFont = Ubuntu().get(.regular, 12)
     }
-    
-    let baseFont: Pershotravneva = Pershotravneva()
-    let ubuntu: Pershotravneva = Pershotravneva()
-    let ptSansCaption: PTSansCaption = PTSansCaption()
 }
 
-class BaseFont: BaseFontProtocol {
+class Ubuntu: BaseFontProtocol {
     var name: String = "Ubuntu"
 }
 
 class Pershotravneva: BaseFontProtocol {
-    var name: String = "Pershotravneva55-Regular"
+    var name: String = "Pershotravneva55"
 }
 
 class PTSansCaption: BaseFontProtocol {
     var name: String = "PT Sans Caption"
+    
+    func get(_ style: BaseFontStyle = .regular, _ size: CGFloat = 15) -> UIFont {
+        return UIFont(name: name, size: size) ?? UIFont()
+    }
 }

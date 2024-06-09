@@ -10,15 +10,15 @@ import UIKit
 class FriendsViewController: BaseViewController {
     
 
-    //MARK: - архитектура
+    //MARK: Architecture
     var localization: FriendsLocalization!
     var presenter: FriendsViewOutput!
 
 
-    //MARK: - структуры и перечисления
+    //MARK: Structs and Enums
 
 
-    //MARK: - элементы UI
+    //MARK: UI elements
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -27,34 +27,48 @@ class FriendsViewController: BaseViewController {
         label.textColor = .slateGray
         return label
     }()
+    
+    private lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.text = localization.findFriendsText
+        label.font = Fonts.Label.large
+        label.textColor = .slateGray
+        return label
+    }()
 
 
-    //MARK: - переменные
+    //MARK: Variables
 
 
-    //MARK: - жизненный цикл контроллера
+    //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
+    
 
-
-    //MARK: - настройка UI
-    func setupUI() {
+    //MARK: Setup UI
+    private func setupUI() {
         addSubviews()
         makeConstraints()
     }
     
-    func addSubviews() {
+    private func addSubviews() {
         view.addSubview(titleLabel)
+        view.addSubview(descriptionLabel)
     }
 
-    func makeConstraints() {
+    private func makeConstraints() {
         titleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(100)
             make.centerX.equalToSuperview()
         }
+        
+        descriptionLabel.snp.makeConstraints { make in
+            make.centerX.centerY.equalToSuperview()
+        }
     }
     
-    //MARK: - методы и функции
+    
+    //MARK: Methods
 }
