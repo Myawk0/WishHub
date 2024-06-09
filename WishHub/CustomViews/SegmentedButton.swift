@@ -12,6 +12,7 @@ class SegmentedButton: UIButton {
     // MARK: - Variables
     
     var buttonBorder: CALayer?
+    var buttonIsTapped: ((SegmentedButton)->())?
     
     override var isSelected: Bool {
         didSet {
@@ -54,6 +55,14 @@ class SegmentedButton: UIButton {
     private func setupAppearance() {
         setTitleColor(.slateGray, for: .normal)
         
+        setupAction()
+    }
+    
+    private func setupAction() {
+        let action = UIAction { _ in
+            self.buttonIsTapped?(self)
+        }
+        addAction(action, for: .touchUpInside)
     }
     
     private func addBottomBorder() {
