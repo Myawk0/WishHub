@@ -20,3 +20,16 @@ extension String {
         return NSLocalizedString(self, tableName: table, comment: "")
     }
 }
+
+extension StringProtocol {
+    var firstUppercased: String {
+        return prefix(1).uppercased() + dropFirst()
+    }
+    var firstCapitalized: String {
+        return String(prefix(1)).capitalized + dropFirst()
+    }
+    
+    var firstLowercased: String {
+        return prefix(1).lowercased() + dropFirst()
+    }
+}

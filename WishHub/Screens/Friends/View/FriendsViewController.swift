@@ -19,6 +19,14 @@ class FriendsViewController: BaseViewController {
 
 
     //MARK: - элементы UI
+    
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = localization.friendsText
+        label.font = Fonts.Title.h1
+        label.textColor = .slateGray
+        return label
+    }()
 
 
     //MARK: - переменные
@@ -38,11 +46,14 @@ class FriendsViewController: BaseViewController {
     }
     
     func addSubviews() {
-
+        view.addSubview(titleLabel)
     }
 
     func makeConstraints() {
-
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(100)
+            make.centerX.equalToSuperview()
+        }
     }
     
     //MARK: - методы и функции

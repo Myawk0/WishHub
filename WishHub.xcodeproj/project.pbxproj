@@ -42,6 +42,9 @@
 		904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC92C15DBD200D3494B /* BasePresenter.swift */; };
 		904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */; };
 		904FBFDA2C15E19D00D3494B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFD92C15E19D00D3494B /* Colors.xcassets */; };
+		904FBFDD2C15E78200D3494B /* pershotravneva55.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFDC2C15E78200D3494B /* pershotravneva55.ttf */; };
+		904FBFE02C15E80D00D3494B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFDF2C15E80D00D3494B /* Fonts.swift */; };
+		904FBFE32C15E85300D3494B /* BaseFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFE22C15E85300D3494B /* BaseFonts.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -82,6 +85,9 @@
 		904FBFC92C15DBD200D3494B /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		904FBFD92C15E19D00D3494B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		904FBFDC2C15E78200D3494B /* pershotravneva55.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pershotravneva55.ttf; sourceTree = "<group>"; };
+		904FBFDF2C15E80D00D3494B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		904FBFE22C15E85300D3494B /* BaseFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFonts.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 		904FBF702C15C5DE00D3494B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				904FBFDB2C15E77300D3494B /* Fonts */,
 				9068A29D2C11E7DB00FBE63F /* Assets.xcassets */,
 				904FBFD92C15E19D00D3494B /* Colors.xcassets */,
 			);
@@ -228,6 +235,7 @@
 		904FBF972C15C75B00D3494B /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				904FBFE12C15E84500D3494B /* Fonts */,
 				904FBFCB2C15DC4B00D3494B /* Network */,
 				904FBFA02C15C9A100D3494B /* View */,
 				904FBFB82C15D9D900D3494B /* Interactor */,
@@ -294,6 +302,30 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		904FBFDB2C15E77300D3494B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFDC2C15E78200D3494B /* pershotravneva55.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		904FBFDE2C15E7F100D3494B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		904FBFE12C15E84500D3494B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFE22C15E85300D3494B /* BaseFonts.swift */,
+				904FBFDF2C15E80D00D3494B /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		9068A2882C11E7D800FBE63F = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +348,7 @@
 				904FBF6E2C15C59B00D3494B /* App */,
 				904FBF6F2C15C5A500D3494B /* Screens */,
 				904FBFA92C15D29E00D3494B /* BaseViews */,
+				904FBFDE2C15E7F100D3494B /* CustomViews */,
 				904FBF972C15C75B00D3494B /* Architecture */,
 				904FBF962C15C72100D3494B /* Extensions */,
 				904FBF702C15C5DE00D3494B /* Resources */,
@@ -395,6 +428,7 @@
 				9068A2A12C11E7DB00FBE63F /* LaunchScreen.storyboard in Resources */,
 				904FBFDA2C15E19D00D3494B /* Colors.xcassets in Resources */,
 				904FBF932C15C6D000D3494B /* FriendsLocalization.strings in Resources */,
+				904FBFDD2C15E78200D3494B /* pershotravneva55.ttf in Resources */,
 				9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +447,7 @@
 				904FBF8A2C15C6D000D3494B /* FriendsPresenter.swift in Sources */,
 				904FBF8B2C15C6D000D3494B /* FriendsNetwork.swift in Sources */,
 				904FBFA22C15C9AB00D3494B /* BaseViewController.swift in Sources */,
+				904FBFE32C15E85300D3494B /* BaseFonts.swift in Sources */,
 				904FBF992C15C77900D3494B /* BaseLocalization.swift in Sources */,
 				904FBFA42C15D07E00D3494B /* KeyboardService.swift in Sources */,
 				904FBFAB2C15D2AC00D3494B /* HeaderViewController.swift in Sources */,
@@ -430,6 +465,7 @@
 				904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */,
 				904FBFC82C15DB8200D3494B /* BaseViewOutput.swift in Sources */,
 				904FBFBA2C15D9E800D3494B /* BaseInteractor.swift in Sources */,
+				904FBFE02C15E80D00D3494B /* Fonts.swift in Sources */,
 				9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */,
 				904FBFA62C15D16900D3494B /* UIApplication+Extension.swift in Sources */,
 				904FBF922C15C6D000D3494B /* FriendsInteractorInput.swift in Sources */,
