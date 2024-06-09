@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		904FBF892C15C6D000D3494B /* FriendsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF752C15C6D000D3494B /* FriendsAssembly.swift */; };
+		904FBF8A2C15C6D000D3494B /* FriendsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF772C15C6D000D3494B /* FriendsPresenter.swift */; };
+		904FBF8B2C15C6D000D3494B /* FriendsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF792C15C6D000D3494B /* FriendsNetwork.swift */; };
+		904FBF8C2C15C6D000D3494B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF7B2C15C6D000D3494B /* FriendsViewController.swift */; };
+		904FBF8D2C15C6D000D3494B /* FriendsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF7C2C15C6D000D3494B /* FriendsViewOutput.swift */; };
+		904FBF8E2C15C6D000D3494B /* FriendsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF7D2C15C6D000D3494B /* FriendsViewInput.swift */; };
+		904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF7F2C15C6D000D3494B /* FriendsData.swift */; };
+		904FBF902C15C6D000D3494B /* FriendsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF812C15C6D000D3494B /* FriendsInteractor.swift */; };
+		904FBF912C15C6D000D3494B /* FriendsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF822C15C6D000D3494B /* FriendsInteractorOutput.swift */; };
+		904FBF922C15C6D000D3494B /* FriendsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF832C15C6D000D3494B /* FriendsInteractorInput.swift */; };
+		904FBF932C15C6D000D3494B /* FriendsLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904FBF852C15C6D000D3494B /* FriendsLocalization.strings */; };
+		904FBF942C15C6D000D3494B /* FriendsLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF862C15C6D000D3494B /* FriendsLocalization.swift */; };
+		904FBF952C15C6D000D3494B /* FriendsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF882C15C6D000D3494B /* FriendsRouter.swift */; };
+		904FBF992C15C77900D3494B /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF982C15C77900D3494B /* BaseLocalization.swift */; };
+		904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF9A2C15C7B400D3494B /* String+Extension.swift */; };
+		904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A2992C11E7D800FBE63F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2982C11E7D800FBE63F /* ViewController.swift */; };
@@ -15,6 +31,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		904FBF752C15C6D000D3494B /* FriendsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsAssembly.swift; sourceTree = "<group>"; };
+		904FBF772C15C6D000D3494B /* FriendsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPresenter.swift; sourceTree = "<group>"; };
+		904FBF792C15C6D000D3494B /* FriendsNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsNetwork.swift; sourceTree = "<group>"; };
+		904FBF7B2C15C6D000D3494B /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		904FBF7C2C15C6D000D3494B /* FriendsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewOutput.swift; sourceTree = "<group>"; };
+		904FBF7D2C15C6D000D3494B /* FriendsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewInput.swift; sourceTree = "<group>"; };
+		904FBF7F2C15C6D000D3494B /* FriendsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsData.swift; sourceTree = "<group>"; };
+		904FBF812C15C6D000D3494B /* FriendsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInteractor.swift; sourceTree = "<group>"; };
+		904FBF822C15C6D000D3494B /* FriendsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInteractorOutput.swift; sourceTree = "<group>"; };
+		904FBF832C15C6D000D3494B /* FriendsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsInteractorInput.swift; sourceTree = "<group>"; };
+		904FBF852C15C6D000D3494B /* FriendsLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = FriendsLocalization.strings; sourceTree = "<group>"; };
+		904FBF862C15C6D000D3494B /* FriendsLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsLocalization.swift; sourceTree = "<group>"; };
+		904FBF882C15C6D000D3494B /* FriendsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsRouter.swift; sourceTree = "<group>"; };
+		904FBF982C15C77900D3494B /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
+		904FBF9A2C15C7B400D3494B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +68,132 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		904FBF6E2C15C59B00D3494B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9068A2942C11E7D800FBE63F /* AppDelegate.swift */,
+				9068A2962C11E7D800FBE63F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		904FBF6F2C15C5A500D3494B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF732C15C6D000D3494B /* Friends */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		904FBF702C15C5DE00D3494B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9068A29D2C11E7DB00FBE63F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		904FBF732C15C6D000D3494B /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF742C15C6D000D3494B /* Assembly */,
+				904FBF762C15C6D000D3494B /* Presenter */,
+				904FBF782C15C6D000D3494B /* Network */,
+				904FBF7A2C15C6D000D3494B /* View */,
+				904FBF7E2C15C6D000D3494B /* Data */,
+				904FBF802C15C6D000D3494B /* Interactor */,
+				904FBF842C15C6D000D3494B /* Localization */,
+				904FBF872C15C6D000D3494B /* Router */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		904FBF742C15C6D000D3494B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF752C15C6D000D3494B /* FriendsAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		904FBF762C15C6D000D3494B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF772C15C6D000D3494B /* FriendsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		904FBF782C15C6D000D3494B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF792C15C6D000D3494B /* FriendsNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		904FBF7A2C15C6D000D3494B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF7B2C15C6D000D3494B /* FriendsViewController.swift */,
+				904FBF7C2C15C6D000D3494B /* FriendsViewOutput.swift */,
+				904FBF7D2C15C6D000D3494B /* FriendsViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		904FBF7E2C15C6D000D3494B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF7F2C15C6D000D3494B /* FriendsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		904FBF802C15C6D000D3494B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF812C15C6D000D3494B /* FriendsInteractor.swift */,
+				904FBF822C15C6D000D3494B /* FriendsInteractorOutput.swift */,
+				904FBF832C15C6D000D3494B /* FriendsInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		904FBF842C15C6D000D3494B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF852C15C6D000D3494B /* FriendsLocalization.strings */,
+				904FBF862C15C6D000D3494B /* FriendsLocalization.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		904FBF872C15C6D000D3494B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF882C15C6D000D3494B /* FriendsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		904FBF962C15C72100D3494B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF9A2C15C7B400D3494B /* String+Extension.swift */,
+				904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		904FBF972C15C75B00D3494B /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF982C15C77900D3494B /* BaseLocalization.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
 		9068A2882C11E7D800FBE63F = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +213,12 @@
 		9068A2932C11E7D800FBE63F /* WishHub */ = {
 			isa = PBXGroup;
 			children = (
-				9068A2942C11E7D800FBE63F /* AppDelegate.swift */,
-				9068A2962C11E7D800FBE63F /* SceneDelegate.swift */,
+				904FBF6E2C15C59B00D3494B /* App */,
+				904FBF6F2C15C5A500D3494B /* Screens */,
+				904FBF972C15C75B00D3494B /* Architecture */,
+				904FBF962C15C72100D3494B /* Extensions */,
+				904FBF702C15C5DE00D3494B /* Resources */,
 				9068A2982C11E7D800FBE63F /* ViewController.swift */,
-				9068A29D2C11E7DB00FBE63F /* Assets.xcassets */,
 				9068A29F2C11E7DB00FBE63F /* LaunchScreen.storyboard */,
 				9068A2A22C11E7DB00FBE63F /* Info.plist */,
 			);
@@ -125,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9068A2A12C11E7DB00FBE63F /* LaunchScreen.storyboard in Resources */,
+				904FBF932C15C6D000D3494B /* FriendsLocalization.strings in Resources */,
 				9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,9 +297,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904FBF942C15C6D000D3494B /* FriendsLocalization.swift in Sources */,
 				9068A2992C11E7D800FBE63F /* ViewController.swift in Sources */,
+				904FBF8D2C15C6D000D3494B /* FriendsViewOutput.swift in Sources */,
+				904FBF8A2C15C6D000D3494B /* FriendsPresenter.swift in Sources */,
+				904FBF8B2C15C6D000D3494B /* FriendsNetwork.swift in Sources */,
+				904FBF992C15C77900D3494B /* BaseLocalization.swift in Sources */,
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
+				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,
+				904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */,
+				904FBF8C2C15C6D000D3494B /* FriendsViewController.swift in Sources */,
+				904FBF952C15C6D000D3494B /* FriendsRouter.swift in Sources */,
+				904FBF912C15C6D000D3494B /* FriendsInteractorOutput.swift in Sources */,
 				9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */,
+				904FBF922C15C6D000D3494B /* FriendsInteractorInput.swift in Sources */,
+				904FBF902C15C6D000D3494B /* FriendsInteractor.swift in Sources */,
+				904FBF8E2C15C6D000D3494B /* FriendsViewInput.swift in Sources */,
+				904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */,
+				904FBF892C15C6D000D3494B /* FriendsAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
