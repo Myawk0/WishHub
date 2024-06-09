@@ -38,11 +38,6 @@ class FriendsViewController: BaseViewController {
     
     private lazy var segmentedButtonsView: SegmentedButtonsView = {
         let view = SegmentedButtonsView()
-        view.buttonTitles = [
-            localization.friendsText,
-            localization.applicationsText,
-            localization.requestsText
-        ]
         return view
     }()
 

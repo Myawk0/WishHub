@@ -7,6 +7,23 @@
 
 import UIKit
 
+enum ButtonType: CaseIterable {
+    case friends
+    case applications
+    case requests
+    
+    var title: String {
+        switch self {
+            case .friends:
+                return Localizable.TabBarItemTitle.friendsText
+            case .applications:
+                return Localizable.SegmentedButton.applicationsText
+            case .requests:
+                return Localizable.SegmentedButton.requestsText
+        }
+    }
+}
+
 class SegmentedButtonsView: UIView {
     
     // MARK: UI elements
@@ -39,19 +56,14 @@ class SegmentedButtonsView: UIView {
     
     
     // MARK: Variables
-    var buttonTitles: [String] = [] {
-        didSet {
-            setupButtons()
-        }
-    }
-    
     private var buttons: [SegmentedButton] = []
-    
+    var buttonType: ButtonType = .friends
     
     // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        setupButtons()
         setupPageViewController()
     }
     
@@ -85,7 +97,7 @@ class SegmentedButtonsView: UIView {
         }
         
         pageViewController.view.snp.makeConstraints { make in
-            make.top.equalTo(buttonsStackView.snp.bottom).offset(20)
+            make.top.equalTo(buttonsStackView.snp.bottom)
             make.leading.trailing.equalToSuperview()
             make.bottom.equalToSuperview().inset(20)
         }
@@ -94,9 +106,9 @@ class SegmentedButtonsView: UIView {
     
     // MARK: Methods
     private func setupButtons() {
-        for (index, title) in buttonTitles.enumerated() {
+        for (index, type) in ButtonType.allCases.enumerated() {
             let button = SegmentedButton()
-            button.title = title
+            button.title = type.title
             button.tag = index
             button.isSelected = index == 0
             button.buttonIsTapped = {
