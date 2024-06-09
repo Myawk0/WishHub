@@ -6,3 +6,9 @@
 //
 
 
+//MARK: - Тексты
+
+"friendsText" = "Друзья";
+"applicationsText" = "Заявки";
+"requestsText" = "Запросы";
+"findFriendsText" = "Найти друзей";
