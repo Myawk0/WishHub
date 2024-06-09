@@ -28,8 +28,6 @@ class FriendsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
-        view.backgroundColor = .systemPink
     }
 
 
