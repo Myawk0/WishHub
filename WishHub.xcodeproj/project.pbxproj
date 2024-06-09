@@ -49,6 +49,8 @@
 		904FBFEA2C15EFAA00D3494B /* PTSansCaption-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE52C15EFA900D3494B /* PTSansCaption-Regular.ttf */; };
 		904FBFEB2C15EFAA00D3494B /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE62C15EFAA00D3494B /* Ubuntu-Bold.ttf */; };
 		904FBFED2C15EFAA00D3494B /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 904FBFE82C15EFAA00D3494B /* Ubuntu-Regular.ttf */; };
+		904FBFEF2C16139200D3494B /* SegmentedButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */; };
+		904FBFF12C161EE600D3494B /* SegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFF02C161EE600D3494B /* SegmentedButton.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -96,6 +98,8 @@
 		904FBFE52C15EFA900D3494B /* PTSansCaption-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PTSansCaption-Regular.ttf"; sourceTree = "<group>"; };
 		904FBFE62C15EFAA00D3494B /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
 		904FBFE82C15EFAA00D3494B /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonsView.swift; sourceTree = "<group>"; };
+		904FBFF02C161EE600D3494B /* SegmentedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButton.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 		904FBFDE2C15E7F100D3494B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */,
+				904FBFF02C161EE600D3494B /* SegmentedButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -470,8 +476,10 @@
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
 				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,
 				904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */,
+				904FBFF12C161EE600D3494B /* SegmentedButton.swift in Sources */,
 				904FBFBC2C15DA1000D3494B /* BaseInteractorInput.swift in Sources */,
 				904FBFBE2C15DA1F00D3494B /* BaseInteractorOutput.swift in Sources */,
+				904FBFEF2C16139200D3494B /* SegmentedButtonsView.swift in Sources */,
 				904FBF9F2C15C93400D3494B /* BaseAssembly.swift in Sources */,
 				904FBF8C2C15C6D000D3494B /* FriendsViewController.swift in Sources */,
 				904FBF952C15C6D000D3494B /* FriendsRouter.swift in Sources */,
