@@ -5,7 +5,6 @@
 //  Created by Мявкo on 9.06.24.
 //
 
-import Foundation
 import UIKit
 
 class FriendsAssembly: BaseAssembly {
@@ -21,14 +20,13 @@ class FriendsAssembly: BaseAssembly {
 		view.localization = localization
         
 		presenter.view = view
-		presenter.screenUtilities = view
 		presenter.interactor = interactor
 		presenter.router = router
 		presenter.localization = localization
         
 		interactor.presenter = presenter
 		interactor.data = data ?? FriendsData()
-		interactor.storageManager = StorageManager.shared
+		//interactor.storageManager = StorageManager.shared
 		interactor.network = network
         
 		return view

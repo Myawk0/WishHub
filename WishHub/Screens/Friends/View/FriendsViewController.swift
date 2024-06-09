@@ -5,7 +5,6 @@
 //  Created by Мявкo on 9.06.24.
 //
 
-import Foundation
 import UIKit
 
 class FriendsViewController: BaseViewController {
@@ -29,6 +28,8 @@ class FriendsViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
+        view.backgroundColor = .systemPink
     }
 
 

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class FriendsPresenter: BasePresenter {
     weak var view: FriendsViewInput!
     var interactor: FriendsInteractorInput!

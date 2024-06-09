@@ -23,9 +23,26 @@
 		904FBF992C15C77900D3494B /* BaseLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF982C15C77900D3494B /* BaseLocalization.swift */; };
 		904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF9A2C15C7B400D3494B /* String+Extension.swift */; };
 		904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */; };
+		904FBF9F2C15C93400D3494B /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBF9E2C15C93400D3494B /* BaseAssembly.swift */; };
+		904FBFA22C15C9AB00D3494B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFA12C15C9AB00D3494B /* BaseViewController.swift */; };
+		904FBFA42C15D07E00D3494B /* KeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFA32C15D07E00D3494B /* KeyboardService.swift */; };
+		904FBFA62C15D16900D3494B /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFA52C15D16900D3494B /* UIApplication+Extension.swift */; };
+		904FBFA82C15D23B00D3494B /* KeyboardSensitiveConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFA72C15D23B00D3494B /* KeyboardSensitiveConstraints.swift */; };
+		904FBFAB2C15D2AC00D3494B /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFAA2C15D2AC00D3494B /* HeaderViewController.swift */; };
+		904FBFAE2C15D2F800D3494B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 904FBFAD2C15D2F800D3494B /* SnapKit */; };
+		904FBFB02C15D2F800D3494B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 904FBFAF2C15D2F800D3494B /* SnapKit-Dynamic */; };
+		904FBFB72C15D90B00D3494B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFB62C15D90B00D3494B /* UIViewController+Extension.swift */; };
+		904FBFBA2C15D9E800D3494B /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFB92C15D9E800D3494B /* BaseInteractor.swift */; };
+		904FBFBC2C15DA1000D3494B /* BaseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFBB2C15DA1000D3494B /* BaseInteractorInput.swift */; };
+		904FBFBE2C15DA1F00D3494B /* BaseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFBD2C15DA1F00D3494B /* BaseInteractorOutput.swift */; };
+		904FBFC12C15DA7700D3494B /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC02C15DA7700D3494B /* BaseRouter.swift */; };
+		904FBFC32C15DAAD00D3494B /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC22C15DAAD00D3494B /* NavigationProtocol.swift */; };
+		904FBFC62C15DB7300D3494B /* BaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC52C15DB7300D3494B /* BaseViewInput.swift */; };
+		904FBFC82C15DB8200D3494B /* BaseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC72C15DB8200D3494B /* BaseViewOutput.swift */; };
+		904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFC92C15DBD200D3494B /* BasePresenter.swift */; };
+		904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
-		9068A2992C11E7D800FBE63F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2982C11E7D800FBE63F /* ViewController.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
 		9068A2A12C11E7DB00FBE63F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29F2C11E7DB00FBE63F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -47,10 +64,25 @@
 		904FBF982C15C77900D3494B /* BaseLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalization.swift; sourceTree = "<group>"; };
 		904FBF9A2C15C7B400D3494B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		904FBF9E2C15C93400D3494B /* BaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
+		904FBFA12C15C9AB00D3494B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		904FBFA32C15D07E00D3494B /* KeyboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardService.swift; sourceTree = "<group>"; };
+		904FBFA52C15D16900D3494B /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		904FBFA72C15D23B00D3494B /* KeyboardSensitiveConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSensitiveConstraints.swift; sourceTree = "<group>"; };
+		904FBFAA2C15D2AC00D3494B /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		904FBFB62C15D90B00D3494B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		904FBFB92C15D9E800D3494B /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		904FBFBB2C15DA1000D3494B /* BaseInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorInput.swift; sourceTree = "<group>"; };
+		904FBFBD2C15DA1F00D3494B /* BaseInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractorOutput.swift; sourceTree = "<group>"; };
+		904FBFC02C15DA7700D3494B /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		904FBFC22C15DAAD00D3494B /* NavigationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocol.swift; sourceTree = "<group>"; };
+		904FBFC52C15DB7300D3494B /* BaseViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewInput.swift; sourceTree = "<group>"; };
+		904FBFC72C15DB8200D3494B /* BaseViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewOutput.swift; sourceTree = "<group>"; };
+		904FBFC92C15DBD200D3494B /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9068A2982C11E7D800FBE63F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9068A29D2C11E7DB00FBE63F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9068A2A02C11E7DB00FBE63F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9068A2A22C11E7DB00FBE63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904FBFAE2C15D2F800D3494B /* SnapKit in Frameworks */,
+				904FBFB02C15D2F800D3494B /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,13 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				904FBF742C15C6D000D3494B /* Assembly */,
-				904FBF762C15C6D000D3494B /* Presenter */,
-				904FBF782C15C6D000D3494B /* Network */,
-				904FBF7A2C15C6D000D3494B /* View */,
 				904FBF7E2C15C6D000D3494B /* Data */,
-				904FBF802C15C6D000D3494B /* Interactor */,
 				904FBF842C15C6D000D3494B /* Localization */,
+				904FBF782C15C6D000D3494B /* Network */,
+				904FBF802C15C6D000D3494B /* Interactor */,
 				904FBF872C15C6D000D3494B /* Router */,
+				904FBF762C15C6D000D3494B /* Presenter */,
+				904FBF7A2C15C6D000D3494B /* View */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -135,9 +169,9 @@
 		904FBF7A2C15C6D000D3494B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				904FBF7B2C15C6D000D3494B /* FriendsViewController.swift */,
 				904FBF7C2C15C6D000D3494B /* FriendsViewOutput.swift */,
 				904FBF7D2C15C6D000D3494B /* FriendsViewInput.swift */,
+				904FBF7B2C15C6D000D3494B /* FriendsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +216,8 @@
 			children = (
 				904FBF9A2C15C7B400D3494B /* String+Extension.swift */,
 				904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */,
+				904FBFA52C15D16900D3494B /* UIApplication+Extension.swift */,
+				904FBFB62C15D90B00D3494B /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,9 +225,70 @@
 		904FBF972C15C75B00D3494B /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				904FBF982C15C77900D3494B /* BaseLocalization.swift */,
+				904FBFCB2C15DC4B00D3494B /* Network */,
+				904FBFA02C15C9A100D3494B /* View */,
+				904FBFB82C15D9D900D3494B /* Interactor */,
+				904FBFBF2C15DA6C00D3494B /* Router */,
+				904FBFC42C15DB2800D3494B /* Other */,
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		904FBFA02C15C9A100D3494B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFA12C15C9AB00D3494B /* BaseViewController.swift */,
+				904FBFA32C15D07E00D3494B /* KeyboardService.swift */,
+				904FBFA72C15D23B00D3494B /* KeyboardSensitiveConstraints.swift */,
+				904FBFC52C15DB7300D3494B /* BaseViewInput.swift */,
+				904FBFC72C15DB8200D3494B /* BaseViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		904FBFA92C15D29E00D3494B /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFAA2C15D2AC00D3494B /* HeaderViewController.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		904FBFB82C15D9D900D3494B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFB92C15D9E800D3494B /* BaseInteractor.swift */,
+				904FBFBB2C15DA1000D3494B /* BaseInteractorInput.swift */,
+				904FBFBD2C15DA1F00D3494B /* BaseInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		904FBFBF2C15DA6C00D3494B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFC02C15DA7700D3494B /* BaseRouter.swift */,
+				904FBFC22C15DAAD00D3494B /* NavigationProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		904FBFC42C15DB2800D3494B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				904FBF9E2C15C93400D3494B /* BaseAssembly.swift */,
+				904FBF982C15C77900D3494B /* BaseLocalization.swift */,
+				904FBFC92C15DBD200D3494B /* BasePresenter.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		904FBFCB2C15DC4B00D3494B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFCC2C15DC5800D3494B /* BaseNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		9068A2882C11E7D800FBE63F = {
@@ -215,10 +312,10 @@
 			children = (
 				904FBF6E2C15C59B00D3494B /* App */,
 				904FBF6F2C15C5A500D3494B /* Screens */,
+				904FBFA92C15D29E00D3494B /* BaseViews */,
 				904FBF972C15C75B00D3494B /* Architecture */,
 				904FBF962C15C72100D3494B /* Extensions */,
 				904FBF702C15C5DE00D3494B /* Resources */,
-				9068A2982C11E7D800FBE63F /* ViewController.swift */,
 				9068A29F2C11E7DB00FBE63F /* LaunchScreen.storyboard */,
 				9068A2A22C11E7DB00FBE63F /* Info.plist */,
 			);
@@ -241,6 +338,10 @@
 			dependencies = (
 			);
 			name = WishHub;
+			packageProductDependencies = (
+				904FBFAD2C15D2F800D3494B /* SnapKit */,
+				904FBFAF2C15D2F800D3494B /* SnapKit-Dynamic */,
+			);
 			productName = WishHub;
 			productReference = 9068A2912C11E7D800FBE63F /* WishHub.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +371,10 @@
 				ru,
 			);
 			mainGroup = 9068A2882C11E7D800FBE63F;
+			packageReferences = (
+				904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				904FBFD42C15DE1500D3494B /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 9068A2922C11E7D800FBE63F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,23 +402,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904FBFB72C15D90B00D3494B /* UIViewController+Extension.swift in Sources */,
+				904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */,
 				904FBF942C15C6D000D3494B /* FriendsLocalization.swift in Sources */,
-				9068A2992C11E7D800FBE63F /* ViewController.swift in Sources */,
 				904FBF8D2C15C6D000D3494B /* FriendsViewOutput.swift in Sources */,
 				904FBF8A2C15C6D000D3494B /* FriendsPresenter.swift in Sources */,
 				904FBF8B2C15C6D000D3494B /* FriendsNetwork.swift in Sources */,
+				904FBFA22C15C9AB00D3494B /* BaseViewController.swift in Sources */,
 				904FBF992C15C77900D3494B /* BaseLocalization.swift in Sources */,
+				904FBFA42C15D07E00D3494B /* KeyboardService.swift in Sources */,
+				904FBFAB2C15D2AC00D3494B /* HeaderViewController.swift in Sources */,
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
 				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,
 				904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */,
+				904FBFBC2C15DA1000D3494B /* BaseInteractorInput.swift in Sources */,
+				904FBFBE2C15DA1F00D3494B /* BaseInteractorOutput.swift in Sources */,
+				904FBF9F2C15C93400D3494B /* BaseAssembly.swift in Sources */,
 				904FBF8C2C15C6D000D3494B /* FriendsViewController.swift in Sources */,
 				904FBF952C15C6D000D3494B /* FriendsRouter.swift in Sources */,
+				904FBFC32C15DAAD00D3494B /* NavigationProtocol.swift in Sources */,
+				904FBFC62C15DB7300D3494B /* BaseViewInput.swift in Sources */,
 				904FBF912C15C6D000D3494B /* FriendsInteractorOutput.swift in Sources */,
+				904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */,
+				904FBFC82C15DB8200D3494B /* BaseViewOutput.swift in Sources */,
+				904FBFBA2C15D9E800D3494B /* BaseInteractor.swift in Sources */,
 				9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */,
+				904FBFA62C15D16900D3494B /* UIApplication+Extension.swift in Sources */,
 				904FBF922C15C6D000D3494B /* FriendsInteractorInput.swift in Sources */,
 				904FBF902C15C6D000D3494B /* FriendsInteractor.swift in Sources */,
+				904FBFC12C15DA7700D3494B /* BaseRouter.swift in Sources */,
 				904FBF8E2C15C6D000D3494B /* FriendsViewInput.swift in Sources */,
 				904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */,
+				904FBFA82C15D23B00D3494B /* KeyboardSensitiveConstraints.swift in Sources */,
 				904FBF892C15C6D000D3494B /* FriendsAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +660,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		904FBFD42C15DE1500D3494B /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		904FBFAD2C15D2F800D3494B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		904FBFAF2C15D2F800D3494B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9068A2892C11E7D800FBE63F /* Project object */;
 }
