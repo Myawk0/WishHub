@@ -75,7 +75,7 @@ class FriendsViewController: BaseViewController {
         }
         
         segmentedButtonsView.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(10)
+            make.top.equalTo(titleLabel.snp.bottom).offset(15)
             make.leading.trailing.equalToSuperview()
             make.bottom.equalToSuperview().inset(60)
         }

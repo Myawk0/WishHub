@@ -18,7 +18,7 @@ class SegmentedButton: UIButton {
         didSet {
             let color: UIColor = isSelected ? selectedColor : .slateGray
             setTitleColor(color, for: .normal)
-            //backgroundColor = isSelected ? .americanSilver : .ghostWhite
+            //backgroundColor = isSelected ? .brightGray : .ghostWhite
             isSelected ? addBottomBorder() : removeBottomBorder()
             layoutIfNeeded()
         }
@@ -30,7 +30,7 @@ class SegmentedButton: UIButton {
         }
     }
     
-    private let selectedColor: UIColor = .systemPink
+    private let selectedColor: UIColor = .darkPastelPurple
     
     // MARK: - Init
     
@@ -53,8 +53,8 @@ class SegmentedButton: UIButton {
     // MARK: - Methods
     
     private func setupAppearance() {
+        layer.cornerRadius = 16
         setTitleColor(.slateGray, for: .normal)
-        
         setupAction()
     }
     

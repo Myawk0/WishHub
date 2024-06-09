@@ -44,37 +44,42 @@ class TabBarController: UITabBarController {
             generateVC(
                 viewController: FriendsAssembly.assemble(),
                 title: Localizable.TabBarItemTitle.friendsText,
-                image: UIImage(named: "handshake")?.resizeImage(size: imageSize)
+                image: UIImage(named: "handshake")?.resizeImage(size: imageSize),
+                selectedImage: UIImage(named: "selectedHandshake")?.resizeImage(size: imageSize)
             ),
             generateVC(
                 viewController: BaseViewController(),
                 title: Localizable.TabBarItemTitle.wishlistsText,
-                image: UIImage(systemName: "wand.and.stars")?.resizeImage(size: imageSize)
+                image: UIImage(systemName: "wand.and.stars.inverse")?.resizeImage(size: imageSize),
+                selectedImage: UIImage(systemName: "wand.and.stars")?.resizeImage(size: imageSize)
             ),
             generateVC(
                 viewController: BaseViewController(),
                 title: Localizable.TabBarItemTitle.profileText,
-                image: UIImage(systemName: "person")?.resizeImage(size: imageSize)
+                image: UIImage(systemName: "person")?.resizeImage(size: imageSize),
+                selectedImage: UIImage(systemName: "person.fill")?.resizeImage(size: imageSize)
             )
         ]
     }
     
     //MARK: - методы и функции
     
-    private func generateVC(viewController: BaseViewController, title: String, image: UIImage?) -> UIViewController {
+    private func generateVC(viewController: BaseViewController, title: String, image: UIImage?, selectedImage: UIImage?) -> UIViewController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
+        viewController.tabBarItem.selectedImage = selectedImage?.withTintColor(.brightLavender, renderingMode: .alwaysOriginal)
         
         return viewController
     }
     
     private func setTabBarAppearance() {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.small], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.small], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.medium], for: .selected)
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -8)
         
-        tabBar.tintColor = .systemPink
+        tabBar.tintColor = .darkPastelPurple
         tabBar.unselectedItemTintColor = .slateGray
+        tabBar.isTranslucent = false
         tabBar.backgroundColor = .ghostWhite
         tabBar.addShadow(
             color: .black.withAlphaComponent(0.1),

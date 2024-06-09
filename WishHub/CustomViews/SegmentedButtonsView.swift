@@ -31,6 +31,7 @@ class SegmentedButtonsView: UIView {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
+        stackView.spacing = -1
         return stackView
     }()
     
@@ -43,13 +44,13 @@ class SegmentedButtonsView: UIView {
     
     private var contentControllers: [UIViewController] = {
         let firstPage = UIViewController()
-        firstPage.view.backgroundColor = .systemYellow
+        firstPage.view.backgroundColor = .ghostWhite
         
         let secondPage = UIViewController()
-        secondPage.view.backgroundColor = .systemMint
+        secondPage.view.backgroundColor = .ghostWhite
         
         let thirdPage = UIViewController()
-        thirdPage.view.backgroundColor = .systemPink
+        thirdPage.view.backgroundColor = .ghostWhite
         
         return [firstPage, secondPage, thirdPage]
     }()
@@ -111,6 +112,13 @@ class SegmentedButtonsView: UIView {
             button.title = type.title
             button.tag = index
             button.isSelected = index == 0
+//            if index == 0 {
+//                button.roundEdge(.left)
+//            } else if index == ButtonType.allCases.count - 1 {
+//                button.roundEdge(.right)
+//            } else {
+//                button.roundEdge(.none)
+//            }
             button.buttonIsTapped = {
                 [weak self] button in
                 guard let self = self else { return }

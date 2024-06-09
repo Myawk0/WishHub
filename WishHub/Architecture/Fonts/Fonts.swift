@@ -9,7 +9,7 @@ import UIKit
 
 struct Fonts {
     enum Title {
-        static let h1: UIFont = Pershotravneva().get(.regular, 22)
+        static let h1: UIFont = Pershotravneva().get(.regular, 26)
         static let h2: UIFont = Pershotravneva().get(.regular, 18)
         static let h3: UIFont = Pershotravneva().get(.regular, 16)
         static let h4: UIFont = Pershotravneva().get(.regular, 14)

@@ -25,4 +25,30 @@ extension UIView {
         layer.shadowOffset = offset
         layer.shadowColor = color.cgColor
     }
+    
+    enum ViewEdge {
+        case left
+        case top
+        case right
+        case bottom
+        case all
+        case none
+    }
+    
+    func roundEdge(_ edge: ViewEdge) {
+        switch edge {
+            case .left:
+                layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+            case .top:
+                layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            case .right:
+                layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+            case .bottom:
+                layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+            case .all:
+                layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+            case .none:
+                layer.maskedCorners = []
+        }
+    }
 }
