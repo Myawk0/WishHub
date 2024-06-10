@@ -113,6 +113,8 @@
 		904FC09E2C1703EF00D3494B /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0912C1703EF00D3494B /* ProfileRouter.swift */; };
 		904FC0A02C170B1800D3494B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC09F2C170B1700D3494B /* TabBar.swift */; };
 		904FC0A22C170BFD00D3494B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0A12C170BFD00D3494B /* Constants.swift */; };
+		904FC0A82C17225000D3494B /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0A72C17225000D3494B /* ProfileTableView.swift */; };
+		904FC0AC2C17345600D3494B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -225,6 +227,8 @@
 		904FC0912C1703EF00D3494B /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		904FC09F2C170B1700D3494B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		904FC0A12C170BFD00D3494B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		904FC0A72C17225000D3494B /* ProfileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
+		904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 		904FBFDE2C15E7F100D3494B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				904FC0A92C17343600D3494B /* ProfileTableView */,
 				904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */,
 				904FBFF02C161EE600D3494B /* SegmentedButton.swift */,
 			);
@@ -865,6 +870,23 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		904FC0A92C17343600D3494B /* ProfileTableView */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0AA2C17344000D3494B /* Cell */,
+				904FC0A72C17225000D3494B /* ProfileTableView.swift */,
+			);
+			path = ProfileTableView;
+			sourceTree = "<group>";
+		};
+		904FC0AA2C17344000D3494B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9068A2882C11E7D800FBE63F = {
 			isa = PBXGroup;
 			children = (
@@ -1048,6 +1070,7 @@
 				904FC0282C167A8B00D3494B /* FriendsPageViewController.swift in Sources */,
 				904FC0722C167B5E00D3494B /* RequestsPageViewInput.swift in Sources */,
 				904FC02B2C167A8B00D3494B /* FriendsPageInteractorInput.swift in Sources */,
+				904FC0A82C17225000D3494B /* ProfileTableView.swift in Sources */,
 				904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */,
 				904FC09C2C1703EF00D3494B /* ProfileLocalization.swift in Sources */,
 				904FC0942C1703EF00D3494B /* ProfileNetwork.swift in Sources */,
@@ -1074,6 +1097,7 @@
 				904FBFC12C15DA7700D3494B /* BaseRouter.swift in Sources */,
 				904FC0732C167B5E00D3494B /* RequestsPageData.swift in Sources */,
 				904FBF8E2C15C6D000D3494B /* FriendsViewInput.swift in Sources */,
+				904FC0AC2C17345600D3494B /* ProfileTableViewCell.swift in Sources */,
 				904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */,
 				904FC0512C167B0900D3494B /* ApplicationsPageInteractorOutput.swift in Sources */,
 				904FC04C2C167B0900D3494B /* ApplicationsPageViewOutput.swift in Sources */,

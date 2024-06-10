@@ -23,7 +23,7 @@ class FriendsViewController: BaseViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = localization.friendsText
-        label.font = Fonts.Title.h1
+        label.font = Fonts.Title.h3
         label.textColor = .darkPastelPurple
         return label
     }()
