@@ -1,0 +1,18 @@
+/* 
+  ErrorLocalizable.strings
+  WishHub
+
+  Created by Мявкo on 9.06.24.
+*/
+
+"unauthorizedMailError" = "Адрес эл. почты не зарегистрирован";
+"userExistsError" = "Адрес эл. почты уже зарегистрирован";
+
+"unauthorizedError" = "Истек срок действия токена доступа";
+"unauthorizedErrorDescription" = "Ваш токен доступа устарел. Требуется повторный вход в аккаунт";
+
+"serverError" = "Ошибка сервера";
+"serverErrorDescription" = "На сервере проводятся технические работы. Пожалуйста, повторите запрос позже";
+
+"unknownError" = "Неизвестная ошибка";
+"unknownErrorDescription" = "Произошла неизвестная ошибка, пожалуйста, попробуйте еще раз или повторите запрос позже";

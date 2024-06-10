@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  WishHub
+
+  Created by Мявкo on 9.06.24.
+*/
+
+// MARK: Segmented button texts
+"friendsText" = "Друзья";
+"applicationsText" = "Заявки";
+"requestsText" = "Запросы";
+
+
+// MARK: TabBar titles
+"wishlistsText" = "Вишлисты";
+"profileText" = "Профиль";
+
+// MARK: Alert texts
+"cameraAccessDeniedTitle" = "Необходим доступ к Камере";
+"cameraAccessDeniedDescription" = "Для использования функции необходимо предоставить приложению доступ к использованию Камеры устройства";
+"libraryAccessDeniedTitle" = "Необходим доступ к Галерее";
+"libraryAccessDeniedDescription" = "Для использования функции необходимо предоставить приложению доступ к использованию Галереи устройства";
+"cancelButtonText" = "Отменить";
+"openSettingsButtonText" = "Открыть настройки";
