@@ -9,6 +9,8 @@ import UIKit
 
 class ProfileTableView: UITableView {
     
+    let menuItems = ProfileMenuItem.allCases
+    
     // MARK: - Init
     
     override init(frame: CGRect, style: UITableView.Style) {
@@ -29,9 +31,7 @@ class ProfileTableView: UITableView {
     
         register(ProfileTableViewCell.self, forCellReuseIdentifier: ProfileTableViewCell.className)
         layer.cornerRadius = 16
-        //layer.borderWidth = 2
-        //layer.borderColor = UIColor.brightLavender.cgColor
-        
+  
         separatorStyle = .none
         isScrollEnabled = false
     }
@@ -41,15 +41,13 @@ class ProfileTableView: UITableView {
 // MARK: - UITableViewDataSource
 extension ProfileTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return menuItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.className, for: indexPath) as? ProfileTableViewCell else { return UITableViewCell() }
       
-//        if indexPath.row == 4 {
-//            cell.hideSeparator()
-//        }
+        cell.menuItem = menuItems[indexPath.row]
         return cell
     }
 }

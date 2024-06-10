@@ -1,0 +1,98 @@
+//
+//  CustomSwitcher.swift
+//  WishHub
+//
+//  Created by Мявкo on 10.06.24.
+//
+
+import UIKit
+
+class CustomSwitcher: UIView {
+    
+    // MARK: UI elements
+    private let switchBackgroundView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.layer.cornerRadius = 11
+        return view
+    }()
+    
+    private let switchThumbView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
+        view.addShadow(color: .slateGray, opacity: 0.3, radius: 2)
+        return view
+    }()
+    
+    
+    // MARK: Properties
+    var isOn: Bool = false {
+        didSet {
+            updateSwitchState(animated: true)
+        }
+    }
+    
+    let onTintColor: UIColor = .glossyGrape
+    let offTintColor: UIColor = .languidLavender
+    let thumbTintColor: UIColor = .ghostWhite
+    
+    
+    // MARK: Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    
+    // MARK: Setup UI
+    private func setupUI() {
+        addSubviews()
+        makeConstraints()
+        updateSwitchState(animated: false)
+    }
+    
+    private func addSubviews() {
+        addSubview(switchBackgroundView)
+        switchBackgroundView.addSubview(switchThumbView)
+    }
+    
+    private func makeConstraints() {
+        switchBackgroundView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+            make.height.equalTo(22)
+        }
+        
+        switchThumbView.snp.makeConstraints { make in
+            make.size.equalTo(CGSize(width: 20, height: 20))
+            make.centerY.equalToSuperview()
+            make.leading.equalToSuperview().offset(1)
+        }
+    }
+    
+    
+    // MARK: Methods
+    @objc private func handleTap() {
+        isOn.toggle()
+    }
+    
+    private func updateSwitchState(animated: Bool) {
+        let backgroundColor = isOn ? onTintColor : offTintColor
+        let thumbPosition = isOn ? bounds.width - 21 : 1
+        
+        if animated {
+            UIView.animate(withDuration: 0.3) {
+                self.switchBackgroundView.backgroundColor = backgroundColor
+                self.switchThumbView.frame.origin.x = thumbPosition
+            }
+        } else {
+            switchBackgroundView.backgroundColor = backgroundColor
+            switchThumbView.frame.origin.x = thumbPosition
+        }
+    }
+}

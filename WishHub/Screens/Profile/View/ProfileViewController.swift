@@ -121,9 +121,9 @@ class ProfileViewController: BaseViewController {
         }
         
         tableView.snp.makeConstraints { make in
-            make.top.equalTo(userNicknameLabel.snp.bottom).offset(30)
+            make.top.equalTo(userNicknameLabel.snp.bottom).offset(100)
             make.leading.trailing.equalToSuperview().inset(20)
-            make.height.equalTo(250)
+            make.height.equalTo(200)
         }
     }
     

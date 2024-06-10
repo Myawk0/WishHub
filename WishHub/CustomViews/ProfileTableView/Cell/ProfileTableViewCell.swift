@@ -11,14 +11,12 @@ class ProfileTableViewCell: UITableViewCell {
     
     private lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "star")?.withTintColor(.glossyGrape, renderingMode: .alwaysOriginal)
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Текст"
         label.font = Fonts.Body.large
         label.textColor = .slateGray
         label.textAlignment = .center
@@ -30,6 +28,20 @@ class ProfileTableViewCell: UITableViewCell {
         view.backgroundColor = .glossyGrape.withAlphaComponent(0.2)
         return view
     }()
+    
+    private lazy var modeSwitch: CustomSwitcher = {
+        let switcher = CustomSwitcher()
+        switcher.isHidden = true
+        return switcher
+    }()
+    
+    var menuItem: ProfileMenuItem! {
+        didSet {
+            iconImageView.image = menuItem.coloredIcon
+            titleLabel.text = menuItem.title
+            modeSwitch.isHidden = menuItem != .mode
+        }
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -53,6 +65,7 @@ class ProfileTableViewCell: UITableViewCell {
     private func addSubviews() {
         contentView.addSubview(iconImageView)
         contentView.addSubview(titleLabel)
+        contentView.addSubview(modeSwitch)
         contentView.addSubview(separatorView)
     }
     
@@ -68,14 +81,18 @@ class ProfileTableViewCell: UITableViewCell {
             make.leading.equalTo(iconImageView.snp.trailing).offset(10)
         }
         
+        modeSwitch.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(20)
+            make.centerY.equalToSuperview()
+            make.height.equalTo(22)
+            make.width.equalTo(40)
+            make.leading.greaterThanOrEqualTo(titleLabel.snp.trailing).offset(20)
+        }
+        
         separatorView.snp.makeConstraints { make in
             make.bottom.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(1)
         }
-    }
-    
-    func hideSeparator() {
-        separatorView.isHidden = true
     }
 }
