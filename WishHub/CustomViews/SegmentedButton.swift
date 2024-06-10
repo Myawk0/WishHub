@@ -55,6 +55,7 @@ class SegmentedButton: UIButton {
     private func setupAppearance() {
         layer.cornerRadius = 16
         setTitleColor(.slateGray, for: .normal)
+        titleLabel?.font = Fonts.Body.large
         setupAction()
     }
     

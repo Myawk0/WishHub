@@ -44,13 +44,13 @@ class SegmentedButtonsView: UIView {
     
     private var contentControllers: [UIViewController] = {
         let firstPage = UIViewController()
-        firstPage.view.backgroundColor = .ghostWhite
+        firstPage.view.backgroundColor = .brightLavender
         
         let secondPage = UIViewController()
-        secondPage.view.backgroundColor = .ghostWhite
+        secondPage.view.backgroundColor = .glossyGrape
         
         let thirdPage = UIViewController()
-        thirdPage.view.backgroundColor = .ghostWhite
+        thirdPage.view.backgroundColor = .darkPastelPurple
         
         return [firstPage, secondPage, thirdPage]
     }()
@@ -100,7 +100,7 @@ class SegmentedButtonsView: UIView {
         pageViewController.view.snp.makeConstraints { make in
             make.top.equalTo(buttonsStackView.snp.bottom)
             make.leading.trailing.equalToSuperview()
-            make.bottom.equalToSuperview().inset(20)
+            make.bottom.equalToSuperview()
         }
     }
     

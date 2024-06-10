@@ -40,26 +40,18 @@ class TabBarController: UITabBarController {
     }
     
     private func generateTabBar() {
-        viewControllers = [
-            generateVC(
-                viewController: FriendsAssembly.assemble(),
-                title: Localizable.TabBarItemTitle.friendsText,
-                image: UIImage(named: "handshake")?.resizeImage(size: imageSize),
-                selectedImage: UIImage(named: "selectedHandshake")?.resizeImage(size: imageSize)
-            ),
-            generateVC(
-                viewController: BaseViewController(),
-                title: Localizable.TabBarItemTitle.wishlistsText,
-                image: UIImage(systemName: "wand.and.stars.inverse")?.resizeImage(size: imageSize),
-                selectedImage: UIImage(systemName: "wand.and.stars")?.resizeImage(size: imageSize)
-            ),
-            generateVC(
-                viewController: BaseViewController(),
-                title: Localizable.TabBarItemTitle.profileText,
-                image: UIImage(systemName: "person")?.resizeImage(size: imageSize),
-                selectedImage: UIImage(systemName: "person.fill")?.resizeImage(size: imageSize)
+        var allViewControllers = [UIViewController]()
+        for itemType in TabBarItemType.allCases {
+            allViewControllers.append(
+                generateVC(
+                    viewController: itemType.parentController,
+                    title: itemType.itemTitle,
+                    image: itemType.itemImage?.resizeImage(size: imageSize),
+                    selectedImage: itemType.itemSelectedImage?.resizeImage(size: imageSize)
+                )
             )
-        ]
+        }
+        viewControllers = allViewControllers
     }
     
     //MARK: - методы и функции
@@ -67,8 +59,7 @@ class TabBarController: UITabBarController {
     private func generateVC(viewController: BaseViewController, title: String, image: UIImage?, selectedImage: UIImage?) -> UIViewController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
-        viewController.tabBarItem.selectedImage = selectedImage?.withTintColor(.brightLavender, renderingMode: .alwaysOriginal)
-        
+        viewController.tabBarItem.selectedImage = selectedImage?.withTintColor(.darkPastelPurple, renderingMode: .alwaysOriginal)
         return viewController
     }
     
