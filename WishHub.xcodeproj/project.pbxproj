@@ -59,6 +59,45 @@
 		904FC0042C1633FF00D3494B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0032C1633FF00D3494B /* UIView+Extension.swift */; };
 		904FC0062C16596600D3494B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0052C16596600D3494B /* Images.swift */; };
 		904FC0092C165B3400D3494B /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0082C165B3400D3494B /* TabBarItemType.swift */; };
+		904FC0232C167A8B00D3494B /* FriendsPageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC00F2C167A8B00D3494B /* FriendsPageAssembly.swift */; };
+		904FC0242C167A8B00D3494B /* FriendsPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0112C167A8B00D3494B /* FriendsPagePresenter.swift */; };
+		904FC0252C167A8B00D3494B /* FriendsPageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0132C167A8B00D3494B /* FriendsPageNetwork.swift */; };
+		904FC0262C167A8B00D3494B /* FriendsPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0152C167A8B00D3494B /* FriendsPageViewInput.swift */; };
+		904FC0272C167A8B00D3494B /* FriendsPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0162C167A8B00D3494B /* FriendsPageViewOutput.swift */; };
+		904FC0282C167A8B00D3494B /* FriendsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0172C167A8B00D3494B /* FriendsPageViewController.swift */; };
+		904FC0292C167A8B00D3494B /* FriendsPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0192C167A8B00D3494B /* FriendsPageData.swift */; };
+		904FC02A2C167A8B00D3494B /* FriendsPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC01B2C167A8B00D3494B /* FriendsPageInteractor.swift */; };
+		904FC02B2C167A8B00D3494B /* FriendsPageInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC01C2C167A8B00D3494B /* FriendsPageInteractorInput.swift */; };
+		904FC02C2C167A8B00D3494B /* FriendsPageInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC01D2C167A8B00D3494B /* FriendsPageInteractorOutput.swift */; };
+		904FC02D2C167A8B00D3494B /* FriendsPageLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC01F2C167A8B00D3494B /* FriendsPageLocalization.swift */; };
+		904FC02E2C167A8B00D3494B /* FriendsPageLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904FC0202C167A8B00D3494B /* FriendsPageLocalization.strings */; };
+		904FC02F2C167A8B00D3494B /* FriendsPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0222C167A8B00D3494B /* FriendsPageRouter.swift */; };
+		904FC0482C167B0900D3494B /* ApplicationsPageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0342C167B0900D3494B /* ApplicationsPageAssembly.swift */; };
+		904FC0492C167B0900D3494B /* ApplicationsPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0362C167B0900D3494B /* ApplicationsPagePresenter.swift */; };
+		904FC04A2C167B0900D3494B /* ApplicationsPageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0382C167B0900D3494B /* ApplicationsPageNetwork.swift */; };
+		904FC04B2C167B0900D3494B /* ApplicationsPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC03A2C167B0900D3494B /* ApplicationsPageViewInput.swift */; };
+		904FC04C2C167B0900D3494B /* ApplicationsPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC03B2C167B0900D3494B /* ApplicationsPageViewOutput.swift */; };
+		904FC04D2C167B0900D3494B /* ApplicationsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC03C2C167B0900D3494B /* ApplicationsPageViewController.swift */; };
+		904FC04E2C167B0900D3494B /* ApplicationsPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC03E2C167B0900D3494B /* ApplicationsPageData.swift */; };
+		904FC04F2C167B0900D3494B /* ApplicationsPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0402C167B0900D3494B /* ApplicationsPageInteractor.swift */; };
+		904FC0502C167B0900D3494B /* ApplicationsPageInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0412C167B0900D3494B /* ApplicationsPageInteractorInput.swift */; };
+		904FC0512C167B0900D3494B /* ApplicationsPageInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0422C167B0900D3494B /* ApplicationsPageInteractorOutput.swift */; };
+		904FC0522C167B0900D3494B /* ApplicationsPageLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0442C167B0900D3494B /* ApplicationsPageLocalization.swift */; };
+		904FC0532C167B0900D3494B /* ApplicationsPageLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904FC0452C167B0900D3494B /* ApplicationsPageLocalization.strings */; };
+		904FC0542C167B0900D3494B /* ApplicationsPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0472C167B0900D3494B /* ApplicationsPageRouter.swift */; };
+		904FC06D2C167B5E00D3494B /* RequestsPageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0592C167B5D00D3494B /* RequestsPageAssembly.swift */; };
+		904FC06E2C167B5E00D3494B /* RequestsPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC05B2C167B5D00D3494B /* RequestsPagePresenter.swift */; };
+		904FC06F2C167B5E00D3494B /* RequestsPageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC05D2C167B5D00D3494B /* RequestsPageNetwork.swift */; };
+		904FC0702C167B5E00D3494B /* RequestsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC05F2C167B5D00D3494B /* RequestsPageViewController.swift */; };
+		904FC0712C167B5E00D3494B /* RequestsPageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0602C167B5D00D3494B /* RequestsPageViewOutput.swift */; };
+		904FC0722C167B5E00D3494B /* RequestsPageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0612C167B5D00D3494B /* RequestsPageViewInput.swift */; };
+		904FC0732C167B5E00D3494B /* RequestsPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0632C167B5D00D3494B /* RequestsPageData.swift */; };
+		904FC0742C167B5E00D3494B /* RequestsPageInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0652C167B5D00D3494B /* RequestsPageInteractorInput.swift */; };
+		904FC0752C167B5E00D3494B /* RequestsPageInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0662C167B5D00D3494B /* RequestsPageInteractorOutput.swift */; };
+		904FC0762C167B5E00D3494B /* RequestsPageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0672C167B5D00D3494B /* RequestsPageInteractor.swift */; };
+		904FC0772C167B5E00D3494B /* RequestsPageLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0692C167B5D00D3494B /* RequestsPageLocalization.swift */; };
+		904FC0782C167B5E00D3494B /* RequestsPageLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904FC06A2C167B5D00D3494B /* RequestsPageLocalization.strings */; };
+		904FC0792C167B5E00D3494B /* RequestsPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC06C2C167B5D00D3494B /* RequestsPageRouter.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -117,6 +156,45 @@
 		904FC0032C1633FF00D3494B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		904FC0052C16596600D3494B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		904FC0082C165B3400D3494B /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
+		904FC00F2C167A8B00D3494B /* FriendsPageAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageAssembly.swift; sourceTree = "<group>"; };
+		904FC0112C167A8B00D3494B /* FriendsPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPagePresenter.swift; sourceTree = "<group>"; };
+		904FC0132C167A8B00D3494B /* FriendsPageNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageNetwork.swift; sourceTree = "<group>"; };
+		904FC0152C167A8B00D3494B /* FriendsPageViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageViewInput.swift; sourceTree = "<group>"; };
+		904FC0162C167A8B00D3494B /* FriendsPageViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageViewOutput.swift; sourceTree = "<group>"; };
+		904FC0172C167A8B00D3494B /* FriendsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageViewController.swift; sourceTree = "<group>"; };
+		904FC0192C167A8B00D3494B /* FriendsPageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageData.swift; sourceTree = "<group>"; };
+		904FC01B2C167A8B00D3494B /* FriendsPageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageInteractor.swift; sourceTree = "<group>"; };
+		904FC01C2C167A8B00D3494B /* FriendsPageInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageInteractorInput.swift; sourceTree = "<group>"; };
+		904FC01D2C167A8B00D3494B /* FriendsPageInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageInteractorOutput.swift; sourceTree = "<group>"; };
+		904FC01F2C167A8B00D3494B /* FriendsPageLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageLocalization.swift; sourceTree = "<group>"; };
+		904FC0202C167A8B00D3494B /* FriendsPageLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = FriendsPageLocalization.strings; sourceTree = "<group>"; };
+		904FC0222C167A8B00D3494B /* FriendsPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPageRouter.swift; sourceTree = "<group>"; };
+		904FC0342C167B0900D3494B /* ApplicationsPageAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageAssembly.swift; sourceTree = "<group>"; };
+		904FC0362C167B0900D3494B /* ApplicationsPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPagePresenter.swift; sourceTree = "<group>"; };
+		904FC0382C167B0900D3494B /* ApplicationsPageNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageNetwork.swift; sourceTree = "<group>"; };
+		904FC03A2C167B0900D3494B /* ApplicationsPageViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageViewInput.swift; sourceTree = "<group>"; };
+		904FC03B2C167B0900D3494B /* ApplicationsPageViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageViewOutput.swift; sourceTree = "<group>"; };
+		904FC03C2C167B0900D3494B /* ApplicationsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageViewController.swift; sourceTree = "<group>"; };
+		904FC03E2C167B0900D3494B /* ApplicationsPageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageData.swift; sourceTree = "<group>"; };
+		904FC0402C167B0900D3494B /* ApplicationsPageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageInteractor.swift; sourceTree = "<group>"; };
+		904FC0412C167B0900D3494B /* ApplicationsPageInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageInteractorInput.swift; sourceTree = "<group>"; };
+		904FC0422C167B0900D3494B /* ApplicationsPageInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageInteractorOutput.swift; sourceTree = "<group>"; };
+		904FC0442C167B0900D3494B /* ApplicationsPageLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageLocalization.swift; sourceTree = "<group>"; };
+		904FC0452C167B0900D3494B /* ApplicationsPageLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ApplicationsPageLocalization.strings; sourceTree = "<group>"; };
+		904FC0472C167B0900D3494B /* ApplicationsPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationsPageRouter.swift; sourceTree = "<group>"; };
+		904FC0592C167B5D00D3494B /* RequestsPageAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageAssembly.swift; sourceTree = "<group>"; };
+		904FC05B2C167B5D00D3494B /* RequestsPagePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPagePresenter.swift; sourceTree = "<group>"; };
+		904FC05D2C167B5D00D3494B /* RequestsPageNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageNetwork.swift; sourceTree = "<group>"; };
+		904FC05F2C167B5D00D3494B /* RequestsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageViewController.swift; sourceTree = "<group>"; };
+		904FC0602C167B5D00D3494B /* RequestsPageViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageViewOutput.swift; sourceTree = "<group>"; };
+		904FC0612C167B5D00D3494B /* RequestsPageViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageViewInput.swift; sourceTree = "<group>"; };
+		904FC0632C167B5D00D3494B /* RequestsPageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageData.swift; sourceTree = "<group>"; };
+		904FC0652C167B5D00D3494B /* RequestsPageInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageInteractorInput.swift; sourceTree = "<group>"; };
+		904FC0662C167B5D00D3494B /* RequestsPageInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageInteractorOutput.swift; sourceTree = "<group>"; };
+		904FC0672C167B5D00D3494B /* RequestsPageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageInteractor.swift; sourceTree = "<group>"; };
+		904FC0692C167B5D00D3494B /* RequestsPageLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageLocalization.swift; sourceTree = "<group>"; };
+		904FC06A2C167B5D00D3494B /* RequestsPageLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = RequestsPageLocalization.strings; sourceTree = "<group>"; };
+		904FC06C2C167B5D00D3494B /* RequestsPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageRouter.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				904FBF732C15C6D000D3494B /* Friends */,
+				904FC00A2C1679BB00D3494B /* FriendsSubscreens */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -406,6 +485,269 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		904FC00A2C1679BB00D3494B /* FriendsSubscreens */ = {
+			isa = PBXGroup;
+			children = (
+				904FC00D2C167A8B00D3494B /* FriendsPage */,
+				904FC0322C167B0900D3494B /* ApplicationsPage */,
+				904FC0572C167B5D00D3494B /* RequestsPage */,
+			);
+			path = FriendsSubscreens;
+			sourceTree = "<group>";
+		};
+		904FC00D2C167A8B00D3494B /* FriendsPage */ = {
+			isa = PBXGroup;
+			children = (
+				904FC00E2C167A8B00D3494B /* Assembly */,
+				904FC0182C167A8B00D3494B /* Data */,
+				904FC01E2C167A8B00D3494B /* Localization */,
+				904FC0122C167A8B00D3494B /* Network */,
+				904FC01A2C167A8B00D3494B /* Interactor */,
+				904FC0212C167A8B00D3494B /* Router */,
+				904FC0102C167A8B00D3494B /* Presenter */,
+				904FC0142C167A8B00D3494B /* View */,
+			);
+			path = FriendsPage;
+			sourceTree = "<group>";
+		};
+		904FC00E2C167A8B00D3494B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				904FC00F2C167A8B00D3494B /* FriendsPageAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		904FC0102C167A8B00D3494B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0112C167A8B00D3494B /* FriendsPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		904FC0122C167A8B00D3494B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0132C167A8B00D3494B /* FriendsPageNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		904FC0142C167A8B00D3494B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0152C167A8B00D3494B /* FriendsPageViewInput.swift */,
+				904FC0162C167A8B00D3494B /* FriendsPageViewOutput.swift */,
+				904FC0172C167A8B00D3494B /* FriendsPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		904FC0182C167A8B00D3494B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0192C167A8B00D3494B /* FriendsPageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		904FC01A2C167A8B00D3494B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				904FC01B2C167A8B00D3494B /* FriendsPageInteractor.swift */,
+				904FC01C2C167A8B00D3494B /* FriendsPageInteractorInput.swift */,
+				904FC01D2C167A8B00D3494B /* FriendsPageInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		904FC01E2C167A8B00D3494B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				904FC01F2C167A8B00D3494B /* FriendsPageLocalization.swift */,
+				904FC0202C167A8B00D3494B /* FriendsPageLocalization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		904FC0212C167A8B00D3494B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0222C167A8B00D3494B /* FriendsPageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		904FC0322C167B0900D3494B /* ApplicationsPage */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0332C167B0900D3494B /* Assembly */,
+				904FC03D2C167B0900D3494B /* Data */,
+				904FC0432C167B0900D3494B /* Localization */,
+				904FC0372C167B0900D3494B /* Network */,
+				904FC03F2C167B0900D3494B /* Interactor */,
+				904FC0462C167B0900D3494B /* Router */,
+				904FC0352C167B0900D3494B /* Presenter */,
+				904FC0392C167B0900D3494B /* View */,
+			);
+			path = ApplicationsPage;
+			sourceTree = "<group>";
+		};
+		904FC0332C167B0900D3494B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0342C167B0900D3494B /* ApplicationsPageAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		904FC0352C167B0900D3494B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0362C167B0900D3494B /* ApplicationsPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		904FC0372C167B0900D3494B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0382C167B0900D3494B /* ApplicationsPageNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		904FC0392C167B0900D3494B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				904FC03A2C167B0900D3494B /* ApplicationsPageViewInput.swift */,
+				904FC03B2C167B0900D3494B /* ApplicationsPageViewOutput.swift */,
+				904FC03C2C167B0900D3494B /* ApplicationsPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		904FC03D2C167B0900D3494B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				904FC03E2C167B0900D3494B /* ApplicationsPageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		904FC03F2C167B0900D3494B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0402C167B0900D3494B /* ApplicationsPageInteractor.swift */,
+				904FC0412C167B0900D3494B /* ApplicationsPageInteractorInput.swift */,
+				904FC0422C167B0900D3494B /* ApplicationsPageInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		904FC0432C167B0900D3494B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0442C167B0900D3494B /* ApplicationsPageLocalization.swift */,
+				904FC0452C167B0900D3494B /* ApplicationsPageLocalization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		904FC0462C167B0900D3494B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0472C167B0900D3494B /* ApplicationsPageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		904FC0572C167B5D00D3494B /* RequestsPage */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0582C167B5D00D3494B /* Assembly */,
+				904FC0622C167B5D00D3494B /* Data */,
+				904FC0682C167B5D00D3494B /* Localization */,
+				904FC05C2C167B5D00D3494B /* Network */,
+				904FC0642C167B5D00D3494B /* Interactor */,
+				904FC06B2C167B5D00D3494B /* Router */,
+				904FC05A2C167B5D00D3494B /* Presenter */,
+				904FC05E2C167B5D00D3494B /* View */,
+			);
+			name = RequestsPage;
+			path = WishHub/Screens/FriendsSubscreens/RequestsPage;
+			sourceTree = SOURCE_ROOT;
+		};
+		904FC0582C167B5D00D3494B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0592C167B5D00D3494B /* RequestsPageAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		904FC05A2C167B5D00D3494B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				904FC05B2C167B5D00D3494B /* RequestsPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		904FC05C2C167B5D00D3494B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				904FC05D2C167B5D00D3494B /* RequestsPageNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		904FC05E2C167B5D00D3494B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0602C167B5D00D3494B /* RequestsPageViewOutput.swift */,
+				904FC0612C167B5D00D3494B /* RequestsPageViewInput.swift */,
+				904FC05F2C167B5D00D3494B /* RequestsPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		904FC0622C167B5D00D3494B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0632C167B5D00D3494B /* RequestsPageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		904FC0642C167B5D00D3494B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0652C167B5D00D3494B /* RequestsPageInteractorInput.swift */,
+				904FC0662C167B5D00D3494B /* RequestsPageInteractorOutput.swift */,
+				904FC0672C167B5D00D3494B /* RequestsPageInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		904FC0682C167B5D00D3494B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0692C167B5D00D3494B /* RequestsPageLocalization.swift */,
+				904FC06A2C167B5D00D3494B /* RequestsPageLocalization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		904FC06B2C167B5D00D3494B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				904FC06C2C167B5D00D3494B /* RequestsPageRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		9068A2882C11E7D800FBE63F = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +850,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904FC0782C167B5E00D3494B /* RequestsPageLocalization.strings in Resources */,
+				904FC02E2C167A8B00D3494B /* FriendsPageLocalization.strings in Resources */,
+				904FC0532C167B0900D3494B /* ApplicationsPageLocalization.strings in Resources */,
 				9068A2A12C11E7DB00FBE63F /* LaunchScreen.storyboard in Resources */,
 				904FBFDA2C15E19D00D3494B /* Colors.xcassets in Resources */,
 				904FBFE92C15EFAA00D3494B /* Ubuntu-Medium.ttf in Resources */,
@@ -531,47 +876,83 @@
 			files = (
 				904FBFB72C15D90B00D3494B /* UIViewController+Extension.swift in Sources */,
 				904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */,
+				904FC06D2C167B5E00D3494B /* RequestsPageAssembly.swift in Sources */,
 				904FBF942C15C6D000D3494B /* FriendsLocalization.swift in Sources */,
 				904FBF8D2C15C6D000D3494B /* FriendsViewOutput.swift in Sources */,
+				904FC04B2C167B0900D3494B /* ApplicationsPageViewInput.swift in Sources */,
+				904FC0292C167A8B00D3494B /* FriendsPageData.swift in Sources */,
+				904FC0742C167B5E00D3494B /* RequestsPageInteractorInput.swift in Sources */,
+				904FC0242C167A8B00D3494B /* FriendsPagePresenter.swift in Sources */,
 				904FBF8A2C15C6D000D3494B /* FriendsPresenter.swift in Sources */,
 				904FC0092C165B3400D3494B /* TabBarItemType.swift in Sources */,
+				904FC06E2C167B5E00D3494B /* RequestsPagePresenter.swift in Sources */,
+				904FC0762C167B5E00D3494B /* RequestsPageInteractor.swift in Sources */,
 				904FBF8B2C15C6D000D3494B /* FriendsNetwork.swift in Sources */,
 				904FBFA22C15C9AB00D3494B /* BaseViewController.swift in Sources */,
 				904FC0062C16596600D3494B /* Images.swift in Sources */,
 				904FBFE32C15E85300D3494B /* BaseFonts.swift in Sources */,
+				904FC02F2C167A8B00D3494B /* FriendsPageRouter.swift in Sources */,
+				904FC0492C167B0900D3494B /* ApplicationsPagePresenter.swift in Sources */,
+				904FC0702C167B5E00D3494B /* RequestsPageViewController.swift in Sources */,
 				904FBF992C15C77900D3494B /* BaseLocalization.swift in Sources */,
 				904FBFA42C15D07E00D3494B /* KeyboardService.swift in Sources */,
 				904FBFAB2C15D2AC00D3494B /* HeaderViewController.swift in Sources */,
+				904FC0522C167B0900D3494B /* ApplicationsPageLocalization.swift in Sources */,
+				904FC0792C167B5E00D3494B /* RequestsPageRouter.swift in Sources */,
+				904FC02D2C167A8B00D3494B /* FriendsPageLocalization.swift in Sources */,
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
 				904FC0042C1633FF00D3494B /* UIView+Extension.swift in Sources */,
 				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,
+				904FC02C2C167A8B00D3494B /* FriendsPageInteractorOutput.swift in Sources */,
 				904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */,
 				904FBFF12C161EE600D3494B /* SegmentedButton.swift in Sources */,
 				904FBFBC2C15DA1000D3494B /* BaseInteractorInput.swift in Sources */,
 				904FBFBE2C15DA1F00D3494B /* BaseInteractorOutput.swift in Sources */,
+				904FC0232C167A8B00D3494B /* FriendsPageAssembly.swift in Sources */,
 				904FBFEF2C16139200D3494B /* SegmentedButtonsView.swift in Sources */,
 				904FBF9F2C15C93400D3494B /* BaseAssembly.swift in Sources */,
+				904FC04D2C167B0900D3494B /* ApplicationsPageViewController.swift in Sources */,
+				904FC04E2C167B0900D3494B /* ApplicationsPageData.swift in Sources */,
+				904FC0712C167B5E00D3494B /* RequestsPageViewOutput.swift in Sources */,
 				904FBF8C2C15C6D000D3494B /* FriendsViewController.swift in Sources */,
 				904FBF952C15C6D000D3494B /* FriendsRouter.swift in Sources */,
+				904FC0272C167A8B00D3494B /* FriendsPageViewOutput.swift in Sources */,
 				904FBFC32C15DAAD00D3494B /* NavigationProtocol.swift in Sources */,
 				904FBFC62C15DB7300D3494B /* BaseViewInput.swift in Sources */,
 				904FBF912C15C6D000D3494B /* FriendsInteractorOutput.swift in Sources */,
+				904FC0282C167A8B00D3494B /* FriendsPageViewController.swift in Sources */,
+				904FC0722C167B5E00D3494B /* RequestsPageViewInput.swift in Sources */,
+				904FC02B2C167A8B00D3494B /* FriendsPageInteractorInput.swift in Sources */,
 				904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */,
 				904FBFC82C15DB8200D3494B /* BaseViewOutput.swift in Sources */,
 				904FBFBA2C15D9E800D3494B /* BaseInteractor.swift in Sources */,
+				904FC0752C167B5E00D3494B /* RequestsPageInteractorOutput.swift in Sources */,
+				904FC04A2C167B0900D3494B /* ApplicationsPageNetwork.swift in Sources */,
 				904FC0022C1630FD00D3494B /* UIImage+Extension.swift in Sources */,
+				904FC0262C167A8B00D3494B /* FriendsPageViewInput.swift in Sources */,
+				904FC06F2C167B5E00D3494B /* RequestsPageNetwork.swift in Sources */,
 				904FBFE02C15E80D00D3494B /* Fonts.swift in Sources */,
+				904FC0502C167B0900D3494B /* ApplicationsPageInteractorInput.swift in Sources */,
+				904FC04F2C167B0900D3494B /* ApplicationsPageInteractor.swift in Sources */,
 				9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */,
 				904FBFF52C1629DA00D3494B /* TabBarController.swift in Sources */,
+				904FC0542C167B0900D3494B /* ApplicationsPageRouter.swift in Sources */,
 				904FBFA62C15D16900D3494B /* UIApplication+Extension.swift in Sources */,
 				904FBF922C15C6D000D3494B /* FriendsInteractorInput.swift in Sources */,
+				904FC02A2C167A8B00D3494B /* FriendsPageInteractor.swift in Sources */,
 				904FBF902C15C6D000D3494B /* FriendsInteractor.swift in Sources */,
 				904FBFC12C15DA7700D3494B /* BaseRouter.swift in Sources */,
+				904FC0732C167B5E00D3494B /* RequestsPageData.swift in Sources */,
 				904FBF8E2C15C6D000D3494B /* FriendsViewInput.swift in Sources */,
 				904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */,
+				904FC0512C167B0900D3494B /* ApplicationsPageInteractorOutput.swift in Sources */,
+				904FC04C2C167B0900D3494B /* ApplicationsPageViewOutput.swift in Sources */,
 				904FBFA82C15D23B00D3494B /* KeyboardSensitiveConstraints.swift in Sources */,
+				904FC0252C167A8B00D3494B /* FriendsPageNetwork.swift in Sources */,
+				904FC0482C167B0900D3494B /* ApplicationsPageAssembly.swift in Sources */,
 				904FC0002C162A7F00D3494B /* Localizable.swift in Sources */,
 				904FBF892C15C6D000D3494B /* FriendsAssembly.swift in Sources */,
+				904FC0772C167B5E00D3494B /* RequestsPageLocalization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

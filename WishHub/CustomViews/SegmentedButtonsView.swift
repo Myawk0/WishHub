@@ -43,16 +43,11 @@ class SegmentedButtonsView: UIView {
     }()
     
     private var contentControllers: [UIViewController] = {
-        let firstPage = UIViewController()
-        firstPage.view.backgroundColor = .brightLavender
-        
-        let secondPage = UIViewController()
-        secondPage.view.backgroundColor = .glossyGrape
-        
-        let thirdPage = UIViewController()
-        thirdPage.view.backgroundColor = .darkPastelPurple
-        
-        return [firstPage, secondPage, thirdPage]
+        return [
+            FriendsPageAssembly.assemble(),
+            ApplicationsPageAssembly.assemble(),
+            RequestsPageAssembly.assemble()
+        ]
     }()
     
     
@@ -112,13 +107,6 @@ class SegmentedButtonsView: UIView {
             button.title = type.title
             button.tag = index
             button.isSelected = index == 0
-//            if index == 0 {
-//                button.roundEdge(.left)
-//            } else if index == ButtonType.allCases.count - 1 {
-//                button.roundEdge(.right)
-//            } else {
-//                button.roundEdge(.none)
-//            }
             button.buttonIsTapped = {
                 [weak self] button in
                 guard let self = self else { return }

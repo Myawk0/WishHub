@@ -28,14 +28,6 @@ class FriendsViewController: BaseViewController {
         return label
     }()
     
-    private lazy var descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.text = localization.findFriendsText
-        label.font = Fonts.Label.large
-        label.textColor = .slateGray
-        return label
-    }()
-    
     private lazy var segmentedButtonsView: SegmentedButtonsView = {
         let view = SegmentedButtonsView()
         return view
@@ -60,7 +52,6 @@ class FriendsViewController: BaseViewController {
     
     private func addSubviews() {
         view.addSubview(titleLabel)
-        view.addSubview(descriptionLabel)
         view.addSubview(segmentedButtonsView)
     }
 
@@ -68,10 +59,6 @@ class FriendsViewController: BaseViewController {
         titleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(70)
             make.centerX.equalToSuperview()
-        }
-        
-        descriptionLabel.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
         }
         
         segmentedButtonsView.snp.makeConstraints { make in
