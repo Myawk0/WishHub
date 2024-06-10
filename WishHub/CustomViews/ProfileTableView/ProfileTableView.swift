@@ -27,11 +27,11 @@ class ProfileTableView: UITableView {
     private func setupTableView() {
         delegate = self
         dataSource = self
-        
     
         register(ProfileTableViewCell.self, forCellReuseIdentifier: ProfileTableViewCell.className)
         layer.cornerRadius = 16
-  
+        
+        sectionHeaderTopPadding = 0
         separatorStyle = .none
         isScrollEnabled = false
     }
@@ -40,14 +40,19 @@ class ProfileTableView: UITableView {
 
 // MARK: - UITableViewDataSource
 extension ProfileTableView: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuItems.count
+        return section == 0 ? menuItems.count - 1 : 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.className, for: indexPath) as? ProfileTableViewCell else { return UITableViewCell() }
       
-        cell.menuItem = menuItems[indexPath.row]
+        cell.menuItem = indexPath.section == 0 ? menuItems[indexPath.row] : menuItems.last
+       
         return cell
     }
 }
@@ -62,5 +67,17 @@ extension ProfileTableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section == 1 ? 100 : 0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard section == 1 else { return nil }
+        
+        let view = UIView()
+        view.backgroundColor = .ghostWhite
+        return view
     }
 }
