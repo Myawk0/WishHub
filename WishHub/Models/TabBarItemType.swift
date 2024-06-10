@@ -30,7 +30,7 @@ enum TabBarItemType: CaseIterable {
             case .wishlists:
                 return BaseViewController()
             case .profile:
-                return BaseViewController()
+                return ProfileAssembly.assemble()
         }
     }
     
