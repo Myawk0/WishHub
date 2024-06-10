@@ -9,6 +9,12 @@ import UIKit
 
 struct Images {
     
+    enum FriendsPages {
+        static let friends: UIImage? = UIImage.friends
+        static let applications: UIImage? = UIImage.applications
+        static let requests: UIImage? = UIImage.requests
+    }
+    
     enum TabBarItem {
         static let friends: UIImage? = UIImage.handshake
         static let friendsSelected: UIImage? = UIImage.selectedHandshake

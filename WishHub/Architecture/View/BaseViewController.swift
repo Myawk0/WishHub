@@ -36,7 +36,7 @@ class BaseViewController: UIViewController, NavigationProtocol {
     lazy var header: HeaderViewController = HeaderViewController()
     var pushAnimation: UIViewControllerAnimatedTransitioning?
     var popAnimation: UIViewControllerAnimatedTransitioning?
-    let defaultNavigationBarHeight:CGFloat = 56
+    let defaultNavigationBarHeight:CGFloat = 50
     var tapToDismissKeyboard: UITapGestureRecognizer!
     var gestureRecognizerShouldBegin: ((UIGestureRecognizer)->(Bool))?
     
