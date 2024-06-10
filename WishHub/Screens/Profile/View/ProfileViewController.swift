@@ -63,7 +63,21 @@ class ProfileViewController: BaseViewController {
         return label
     }()
     
-    private lazy var tableView: ProfileTableView = {
+    private lazy var userDataStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.spacing = 20
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
+    
+    private lazy var userDataCollectionView: UserDataCollectionView = {
+        let collectionView = UserDataCollectionView()
+        return collectionView
+    }()
+
+    
+    private lazy var menuTableView: ProfileTableView = {
         let tableView = ProfileTableView()
         return tableView
     }()
@@ -91,7 +105,8 @@ class ProfileViewController: BaseViewController {
         userImageView.addSubview(userFirstLetterLabel)
         view.addSubview(userFullNameLabel)
         view.addSubview(userNicknameLabel)
-        view.addSubview(tableView)
+        view.addSubview(userDataCollectionView)
+        view.addSubview(menuTableView)
     }
 
     private func makeConstraints() {
@@ -120,8 +135,14 @@ class ProfileViewController: BaseViewController {
             make.centerX.equalToSuperview()
         }
         
-        tableView.snp.makeConstraints { make in
-            make.top.equalTo(userNicknameLabel.snp.bottom).offset(100)
+        userDataCollectionView.snp.makeConstraints { make in
+            make.top.equalTo(userNicknameLabel.snp.bottom).offset(20)
+            make.leading.trailing.equalToSuperview().inset(20)
+            make.height.equalTo(70)
+        }
+        
+        menuTableView.snp.makeConstraints { make in
+            make.top.equalTo(userDataCollectionView.snp.bottom).offset(50)
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(300)
         }

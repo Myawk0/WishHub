@@ -33,7 +33,7 @@ class CustomSwitcher: UIView {
         }
     }
     
-    let onTintColor: UIColor = .glossyGrape
+    let onTintColor: UIColor = .darkPastelPurple
     let offTintColor: UIColor = .languidLavender
     let thumbTintColor: UIColor = .ghostWhite
     
