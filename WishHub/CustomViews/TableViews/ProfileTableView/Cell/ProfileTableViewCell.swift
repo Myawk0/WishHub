@@ -18,7 +18,7 @@ class ProfileTableViewCell: UITableViewCell {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = Fonts.Body.large
-        label.textColor = .slateGray
+        label.textColor = .independence
         label.textAlignment = .center
         return label
     }()
@@ -37,9 +37,15 @@ class ProfileTableViewCell: UITableViewCell {
     
     var menuItem: ProfileMenuItem! {
         didSet {
-            iconImageView.image = menuItem.coloredIcon
             titleLabel.text = menuItem.title
             modeSwitch.isHidden = menuItem != .mode
+            if menuItem == .logout {
+                iconImageView.image = menuItem.coloredIcon?.withTintColor(.mediumCarmine, renderingMode: .alwaysOriginal)
+                titleLabel.textColor = .mediumCarmine
+                separatorView.isHidden = true
+            } else {
+                iconImageView.image = menuItem.coloredIcon
+            }
         }
     }
     

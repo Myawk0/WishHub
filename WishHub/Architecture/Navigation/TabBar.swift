@@ -10,7 +10,6 @@ import UIKit
 class TabBar: UITabBar {
     
     //MARK: Properties
-    private let backgroundLayer = CAShapeLayer()
     private let tabBarHeight: CGFloat = Constants.tabBarHeight
     
     
@@ -29,8 +28,7 @@ class TabBar: UITabBar {
     // MARK: Override methods
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         let superSize = super.sizeThatFits(size)
-        
-        return CGSize(width: superSize.width, height: self.tabBarHeight)
+        return CGSize(width: superSize.width, height: tabBarHeight)
     }
     
     override func layoutSubviews() {
@@ -65,9 +63,8 @@ class TabBar: UITabBar {
     
     private func setupTabBarAppearance() {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.small], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.medium], for: .selected)
-        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -6)
-        
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -8)
+       
         tintColor = .darkPastelPurple
         unselectedItemTintColor = .slateGray
         

@@ -30,9 +30,17 @@ class ProfileViewController: BaseViewController {
     
     private lazy var userImageView: UIImageView = {
         let imageView = UIImageView()
-        //imageView.image = .
         imageView.backgroundColor = .americanSilver
         imageView.layer.cornerRadius = 60
+        imageView.clipsToBounds = true
+        return imageView
+    }()
+    
+    private lazy var cameraImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = Images.ProfileItems.camera
+        imageView.backgroundColor = .darkPastelPurple
+        imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true
         return imageView
     }()
@@ -49,7 +57,7 @@ class ProfileViewController: BaseViewController {
         let label = UILabel()
         label.text = "Имя Фамилия"
         label.font = Fonts.Body.large
-        label.textColor = .slateGray
+        label.textColor = .independence
         label.textAlignment = .center
         return label
     }()
@@ -58,7 +66,7 @@ class ProfileViewController: BaseViewController {
         let label = UILabel()
         label.text = "@myawko"
         label.font = Fonts.Body.medium
-        label.textColor = .slateGray
+        label.textColor = .independence
         label.textAlignment = .center
         return label
     }()
@@ -103,6 +111,7 @@ class ProfileViewController: BaseViewController {
         view.addSubview(titleLabel)
         view.addSubview(userImageView)
         userImageView.addSubview(userFirstLetterLabel)
+        view.addSubview(cameraImageView)
         view.addSubview(userFullNameLabel)
         view.addSubview(userNicknameLabel)
         view.addSubview(userDataCollectionView)
@@ -119,6 +128,12 @@ class ProfileViewController: BaseViewController {
             make.top.equalTo(titleLabel.snp.bottom).offset(30)
             make.centerX.equalToSuperview()
             make.height.width.equalTo(120)
+        }
+        
+        cameraImageView.snp.makeConstraints { make in
+            make.trailing.equalTo(userImageView.snp.trailing)
+            make.bottom.equalTo(userImageView.snp.bottom)
+            make.height.width.equalTo(40)
         }
         
         userFirstLetterLabel.snp.makeConstraints { make in
@@ -142,7 +157,7 @@ class ProfileViewController: BaseViewController {
         }
         
         menuTableView.snp.makeConstraints { make in
-            make.top.equalTo(userDataCollectionView.snp.bottom).offset(50)
+            make.top.equalTo(userDataCollectionView.snp.bottom).offset(30)
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(300)
         }

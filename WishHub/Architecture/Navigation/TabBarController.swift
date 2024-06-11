@@ -14,6 +14,24 @@ class TabBarController: UITabBarController {
         return CGSize(width: 20, height: 20)
     }
     
+    override var selectedIndex: Int {
+        didSet {
+            guard let selectedViewController = viewControllers?[selectedIndex] else { return }
+            selectedViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.smallMedium], for: .normal)
+        }
+    }
+    
+    override var selectedViewController: UIViewController? {
+        didSet {
+            guard let viewControllers else { return }
+            
+            for viewController in viewControllers {
+                let font = viewController == selectedViewController ? Fonts.Label.smallMedium : Fonts.Label.small
+                viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
+            }
+        }
+    }
+    
     
     //MARK: Lifecycle
     override func viewDidLoad() {

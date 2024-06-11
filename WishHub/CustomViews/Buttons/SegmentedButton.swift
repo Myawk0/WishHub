@@ -16,7 +16,7 @@ class SegmentedButton: UIButton {
     
     override var isSelected: Bool {
         didSet {
-            let color: UIColor = isSelected ? selectedColor : .slateGray
+            let color: UIColor = isSelected ? selectedColor : .independence
             setTitleColor(color, for: .normal)
             //backgroundColor = isSelected ? .brightGray : .ghostWhite
             isSelected ? addBottomBorder() : removeBottomBorder()
@@ -54,7 +54,7 @@ class SegmentedButton: UIButton {
     
     private func setupAppearance() {
         layer.cornerRadius = 16
-        setTitleColor(.slateGray, for: .normal)
+        setTitleColor(.independence, for: .normal)
         titleLabel?.font = Fonts.Body.large
         setupAction()
     }

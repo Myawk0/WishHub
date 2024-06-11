@@ -472,11 +472,11 @@
 		904FBFDE2C15E7F100D3494B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				904FC0B92C17669B00D3494B /* Views */,
+				904FC0BA2C1766A000D3494B /* Buttons */,
 				904FC0B22C17474F00D3494B /* CollectionViews */,
 				904FC0B12C17474800D3494B /* TableViews */,
-				904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */,
-				904FBFF02C161EE600D3494B /* SegmentedButton.swift */,
-				904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */,
+				904FC0BB2C1766AA00D3494B /* Other */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -929,6 +929,30 @@
 				904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		904FC0B92C17669B00D3494B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		904FC0BA2C1766A000D3494B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFF02C161EE600D3494B /* SegmentedButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		904FC0BB2C1766AA00D3494B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		9068A2882C11E7D800FBE63F = {

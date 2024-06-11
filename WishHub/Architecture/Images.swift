@@ -25,4 +25,8 @@ struct Images {
         static let profile: UIImage? = UIImage(systemName: "person")
         static let profileSelected: UIImage? = UIImage(systemName: "person.fill")
     }
+    
+    enum ProfileItems {
+        static let camera: UIImage? = UIImage(systemName: "camera.circle.fill")?.withTintColor(.ghostWhite, renderingMode: .alwaysOriginal)
+    }
 }

@@ -25,6 +25,7 @@ struct Fonts {
         static let large: UIFont = Ubuntu().get(.bold, 16)
         static let medium: UIFont = Ubuntu().get(.medium, 14)
         static let small: UIFont = Ubuntu().get(.regular, 12)
+        static let smallMedium: UIFont = Ubuntu().get(.medium, 12)
     }
 }
 
