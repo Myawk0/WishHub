@@ -119,6 +119,7 @@
 		904FC0B02C17427E00D3494B /* ProfileMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */; };
 		904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B42C17478900D3494B /* UserDataCollectionView.swift */; };
 		904FC0B82C174C4100D3494B /* UserDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */; };
+		904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -237,6 +238,7 @@
 		904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuItem.swift; sourceTree = "<group>"; };
 		904FC0B42C17478900D3494B /* UserDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionView.swift; sourceTree = "<group>"; };
 		904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionViewCell.swift; sourceTree = "<group>"; };
+		904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 				904FBFB62C15D90B00D3494B /* UIViewController+Extension.swift */,
 				904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */,
 				904FBFA52C15D16900D3494B /* UIApplication+Extension.swift */,
+				904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1114,6 +1117,7 @@
 				904FC02D2C167A8B00D3494B /* FriendsPageLocalization.swift in Sources */,
 				904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */,
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
+				904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */,
 				904FC0952C1703EF00D3494B /* ProfileViewInput.swift in Sources */,
 				904FC0042C1633FF00D3494B /* UIView+Extension.swift in Sources */,
 				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,

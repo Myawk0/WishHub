@@ -35,7 +35,7 @@ class UserDataCollectionViewCell: UICollectionViewCell {
     
     private lazy var countLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.Body.large
+        label.font = Fonts.Label.big
         label.text = "0"
         label.textColor = .ghostWhite
         label.textAlignment = .center
@@ -44,7 +44,7 @@ class UserDataCollectionViewCell: UICollectionViewCell {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.Body.medium
+        label.font = Fonts.Label.medium
         label.textColor = .ghostWhite
         label.textAlignment = .center
         return label
@@ -79,7 +79,7 @@ class UserDataCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupAppearance() {
-        contentView.backgroundColor = .darkPastelPurple
+        contentView.backgroundColor = .glossyGrape
     }
     
     private func addSubviews() {

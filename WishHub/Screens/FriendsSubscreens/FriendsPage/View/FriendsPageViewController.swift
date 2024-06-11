@@ -30,7 +30,7 @@ class FriendsPageViewController: BaseViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Нет друзей?"
-        label.font = Fonts.Body.large
+        label.font = Fonts.Label.big
         label.textColor = .darkPastelPurple
         return label
     }()
@@ -38,7 +38,7 @@ class FriendsPageViewController: BaseViewController {
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Кажется, у тебя еще нет друзей. Давай найдем!"
-        label.font = Fonts.Body.medium
+        label.font = Fonts.Label.medium
         label.textColor = .slateGray
         label.numberOfLines = 0
         label.textAlignment = .center

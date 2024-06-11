@@ -24,7 +24,7 @@ class ProfileViewController: BaseViewController {
         let label = UILabel()
         label.text = "Профиль"
         label.font = Fonts.Title.h3
-        label.textColor = .darkPastelPurple
+        label.textColor = .glossyGrape
         return label
     }()
     
@@ -39,7 +39,7 @@ class ProfileViewController: BaseViewController {
     private lazy var cameraImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = Images.ProfileItems.camera
-        imageView.backgroundColor = .darkPastelPurple
+        imageView.backgroundColor = .glossyGrape
         imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true
         return imageView
@@ -49,14 +49,14 @@ class ProfileViewController: BaseViewController {
         let label = UILabel()
         label.text = "M"
         label.font = Fonts.Title.h1
-        label.textColor = .darkPastelPurple
+        label.textColor = .slateGray.withAlphaComponent(0.6)
         return label
     }()
     
     private lazy var userFullNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Имя Фамилия"
-        label.font = Fonts.Body.large
+        label.font = Fonts.Body.largeMedium
         label.textColor = .independence
         label.textAlignment = .center
         return label
@@ -65,7 +65,7 @@ class ProfileViewController: BaseViewController {
     private lazy var userNicknameLabel: UILabel = {
         let label = UILabel()
         label.text = "@myawko"
-        label.font = Fonts.Body.medium
+        label.font = Fonts.Label.medium
         label.textColor = .independence
         label.textAlignment = .center
         return label
@@ -98,13 +98,23 @@ class ProfileViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupThemeSwitcher()
     }
-
 
     //MARK: - настройка UI
     private func setupUI() {
         addSubviews()
         makeConstraints()
+    }
+    
+    private func setupThemeSwitcher() {
+        NotificationCenter.default.addObserver(forName: .switcherStateChanged, object: nil, queue: nil) { notification in
+            if let isOn = notification.userInfo?["isOn"] as? Bool {
+                UIApplication.shared.keyWindow?.overrideUserInterfaceStyle = isOn ? .dark : .light
+                let tabBar = self.tabBarController?.tabBar as? TabBar
+                tabBar?.changeColors(isDarkTheme: isOn)
+            }
+        }
     }
     
     private func addSubviews() {

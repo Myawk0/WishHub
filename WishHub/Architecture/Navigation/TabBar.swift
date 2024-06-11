@@ -11,7 +11,7 @@ class TabBar: UITabBar {
     
     //MARK: Properties
     private let tabBarHeight: CGFloat = Constants.tabBarHeight
-    
+    private var roundLayer: CAShapeLayer?
     
     // MARK: Init
     override init(frame: CGRect) {
@@ -41,6 +41,13 @@ class TabBar: UITabBar {
     
     
     // MARK: Methods
+    func changeColors(isDarkTheme: Bool) {
+        guard let roundLayer else { return }
+        roundLayer.fillColor = isDarkTheme ? UIColor.glossyGrape.cgColor : UIColor.ghostWhite.cgColor
+        tintColor = isDarkTheme ? .glossyGrapeDark : .glossyGrape
+        unselectedItemTintColor = isDarkTheme ? .brightGray : .slateGray
+    }
+    
     private func roundTopEdge() {
         let roundLayer = CAShapeLayer()
         let bezierPath = UIBezierPath(
@@ -59,13 +66,14 @@ class TabBar: UITabBar {
         itemWidth = bounds.width / 4
         itemPositioning = .centered
         roundLayer.fillColor = UIColor.ghostWhite.cgColor
+        self.roundLayer = roundLayer
     }
     
     private func setupTabBarAppearance() {
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.small], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Body.small], for: .normal)
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -8)
        
-        tintColor = .darkPastelPurple
+        tintColor = .glossyGrape
         unselectedItemTintColor = .slateGray
         
         shadowImage = UIImage()

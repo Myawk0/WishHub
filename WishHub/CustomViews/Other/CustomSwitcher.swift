@@ -29,14 +29,16 @@ class CustomSwitcher: UIView {
     // MARK: Properties
     var isOn: Bool = false {
         didSet {
+            NotificationCenter.default.post(name: .switcherStateChanged, object: nil, userInfo: ["isOn": isOn])
+            self.updateLayoutRecursively()
             updateSwitchState(animated: true)
         }
     }
     
-    let onTintColor: UIColor = .darkPastelPurple
+    let onTintColor: UIColor = .glossyGrape
     let offTintColor: UIColor = .languidLavender
     let thumbTintColor: UIColor = .ghostWhite
-    
+
     
     // MARK: Init
     override init(frame: CGRect) {
@@ -75,13 +77,12 @@ class CustomSwitcher: UIView {
         }
     }
     
-    
     // MARK: Methods
     @objc private func handleTap() {
         isOn.toggle()
     }
     
-    private func updateSwitchState(animated: Bool) {
+    func updateSwitchState(animated: Bool) {
         let backgroundColor = isOn ? onTintColor : offTintColor
         let thumbPosition = isOn ? bounds.width - 21 : 1
         

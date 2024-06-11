@@ -9,6 +9,17 @@ import UIKit
 
 extension UIView {
     
+    func getParentViewController() -> UIViewController? {
+        var responder: UIResponder? = self
+        while responder != nil {
+            responder = responder?.next
+            if let viewController = responder as? UIViewController {
+                return viewController
+            }
+        }
+        return nil
+    }
+    
     func updateLayoutRecursively() {
         layoutIfNeeded()
         if let superview {

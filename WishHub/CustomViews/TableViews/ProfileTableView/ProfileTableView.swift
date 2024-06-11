@@ -10,9 +10,9 @@ import UIKit
 class ProfileTableView: UITableView {
     
     let menuItems = ProfileMenuItem.allCases
+
     
     // MARK: - Init
-    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         setupTableView()
@@ -22,8 +22,8 @@ class ProfileTableView: UITableView {
         super.init(coder: coder)
     }
     
-    // MARK: Setup
     
+    // MARK: Setup
     private func setupTableView() {
         delegate = self
         dataSource = self
@@ -39,6 +39,7 @@ class ProfileTableView: UITableView {
 
 
 // MARK: - UITableViewDataSource
+
 extension ProfileTableView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -59,10 +60,10 @@ extension ProfileTableView: UITableViewDataSource {
 
 
 // MARK: - UITableViewDelegate
+
 extension ProfileTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print("Selected row at index \(indexPath.row)")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

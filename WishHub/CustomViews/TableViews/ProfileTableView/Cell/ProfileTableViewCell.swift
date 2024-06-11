@@ -17,7 +17,7 @@ class ProfileTableViewCell: UITableViewCell {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Fonts.Body.large
+        label.font = Fonts.Label.big
         label.textColor = .independence
         label.textAlignment = .center
         return label
@@ -41,7 +41,7 @@ class ProfileTableViewCell: UITableViewCell {
             modeSwitch.isHidden = menuItem != .mode
             if menuItem == .logout {
                 iconImageView.image = menuItem.coloredIcon?.withTintColor(.mediumCarmine, renderingMode: .alwaysOriginal)
-                titleLabel.textColor = .mediumCarmine
+                titleLabel.textColor = .mediumCarmine.withAlphaComponent(0.8)
                 separatorView.isHidden = true
             } else {
                 iconImageView.image = menuItem.coloredIcon

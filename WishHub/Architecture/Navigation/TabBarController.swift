@@ -17,7 +17,7 @@ class TabBarController: UITabBarController {
     override var selectedIndex: Int {
         didSet {
             guard let selectedViewController = viewControllers?[selectedIndex] else { return }
-            selectedViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Label.smallMedium], for: .normal)
+            selectedViewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Body.smallMedium], for: .normal)
         }
     }
     
@@ -26,7 +26,7 @@ class TabBarController: UITabBarController {
             guard let viewControllers else { return }
             
             for viewController in viewControllers {
-                let font = viewController == selectedViewController ? Fonts.Label.smallMedium : Fonts.Label.small
+                let font = viewController == selectedViewController ? Fonts.Body.smallMedium : Fonts.Body.small
                 viewController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
             }
         }
@@ -66,7 +66,7 @@ class TabBarController: UITabBarController {
     private func generateVC(viewController: BaseViewController, title: String, image: UIImage?, selectedImage: UIImage?) -> UIViewController {
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
-        viewController.tabBarItem.selectedImage = selectedImage?.withTintColor(.darkPastelPurple, renderingMode: .alwaysOriginal)
+        viewController.tabBarItem.selectedImage = selectedImage
         return viewController
     }
 }
