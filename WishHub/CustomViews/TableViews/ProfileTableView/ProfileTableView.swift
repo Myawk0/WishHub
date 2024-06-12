@@ -9,8 +9,9 @@ import UIKit
 
 class ProfileTableView: UITableView {
     
+    // MARK: Properties
     let menuItems = ProfileMenuItem.allCases
-
+    
     
     // MARK: - Init
     override init(frame: CGRect, style: UITableView.Style) {
@@ -53,7 +54,7 @@ extension ProfileTableView: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.className, for: indexPath) as? ProfileTableViewCell else { return UITableViewCell() }
       
         cell.menuItem = indexPath.section == 0 ? menuItems[indexPath.row] : menuItems.last
-       
+ 
         return cell
     }
 }

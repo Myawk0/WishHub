@@ -17,6 +17,9 @@ class ProfileViewController: BaseViewController {
 
 
     //MARK: - структуры и перечисления
+    struct ProfileData {
+        
+    }
 
 
     //MARK: - элементы UI
@@ -92,6 +95,11 @@ class ProfileViewController: BaseViewController {
 
 
     //MARK: - переменные
+    var profileData: ProfileData! {
+        didSet {
+ 
+        }
+    }
 
 
     //MARK: - жизненный цикл контроллера
@@ -99,6 +107,7 @@ class ProfileViewController: BaseViewController {
         super.viewDidLoad()
         setupUI()
         setupThemeSwitcher()
+        presenter.viewDidLoaded()
     }
 
     //MARK: - настройка UI
@@ -111,8 +120,11 @@ class ProfileViewController: BaseViewController {
         NotificationCenter.default.addObserver(forName: .switcherStateChanged, object: nil, queue: nil) { notification in
             if let isOn = notification.userInfo?["isOn"] as? Bool {
                 UIApplication.shared.keyWindow?.overrideUserInterfaceStyle = isOn ? .dark : .light
+                
                 let tabBar = self.tabBarController?.tabBar as? TabBar
                 tabBar?.changeColors(isDarkTheme: isOn)
+                
+                self.presenter.themeModeSwitcherIsTapped(isOn: isOn)
             }
         }
     }

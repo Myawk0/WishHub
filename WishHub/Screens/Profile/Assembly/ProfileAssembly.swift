@@ -27,7 +27,7 @@ class ProfileAssembly: BaseAssembly {
         
 		interactor.presenter = presenter
 		interactor.data = data ?? ProfileData()
-        //interactor.storageManager = StorageManager.shared
+        interactor.storageManager = StorageManager.shared
 		interactor.network = network
         
 		return view

@@ -31,7 +31,6 @@ class CustomSwitcher: UIView {
         didSet {
             NotificationCenter.default.post(name: .switcherStateChanged, object: nil, userInfo: ["isOn": isOn])
             self.updateLayoutRecursively()
-            updateSwitchState(animated: true)
         }
     }
     
@@ -56,7 +55,6 @@ class CustomSwitcher: UIView {
     private func setupUI() {
         addSubviews()
         makeConstraints()
-        updateSwitchState(animated: false)
     }
     
     private func addSubviews() {
@@ -81,6 +79,12 @@ class CustomSwitcher: UIView {
     // MARK: Methods
     @objc private func handleTap() {
         isOn.toggle()
+        updateSwitchState(animated: true)
+    }
+    
+    func updateSwitchState(_ isOn: Bool, animated: Bool) {
+        self.isOn = isOn
+        updateSwitchState(animated: animated)
     }
     
     func updateSwitchState(animated: Bool) {
@@ -88,7 +92,7 @@ class CustomSwitcher: UIView {
         let thumbPosition = isOn ? bounds.width - 21 : 1
         
         if animated {
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.6) {
                 self.switchBackgroundView.backgroundColor = backgroundColor
                 self.switchThumbView.frame.origin.x = thumbPosition
             }

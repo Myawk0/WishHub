@@ -10,7 +10,7 @@ import UIKit
 class UserDataCollectionView: UICollectionView {
     
     // MARK: UI elements
-    private lazy var layout: UICollectionViewFlowLayout = {
+    private var customLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 0
@@ -25,10 +25,10 @@ class UserDataCollectionView: UICollectionView {
     
     
     // MARK: Init
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: layout)
-        setupCollectionView()
+    init(frame: CGRect = CGRect.zero) {
+        super.init(frame: frame, collectionViewLayout: customLayout)
         setupAppearance()
+        setupCollectionView()
     }
     
     required init?(coder aDecoder: NSCoder) {

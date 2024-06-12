@@ -8,9 +8,12 @@
 import Foundation
 
 protocol ProfileInteractorInput: BaseInteractorInput {
-    
+    func darkThemeStateChanged(isOn: Bool)
 }
 
 extension ProfileInteractor: ProfileInteractorInput {
-    
+
+    func darkThemeStateChanged(isOn: Bool) {
+        storageManager.isDarkMode = isOn
+    }
 }

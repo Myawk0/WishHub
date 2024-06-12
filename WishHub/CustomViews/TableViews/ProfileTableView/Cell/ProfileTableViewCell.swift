@@ -41,11 +41,17 @@ class ProfileTableViewCell: UITableViewCell {
     var menuItem: ProfileMenuItem! {
         didSet {
             titleLabel.text = menuItem.title
-            darkModeSwitch.isHidden = menuItem != .mode
-            if menuItem == .logout {
-                makeMenuItemRedColored()
-            } else {
-                iconImageView.image = menuItem.coloredIcon
+            
+            switch menuItem {
+                case .mode:
+                    darkModeSwitch.updateSwitchState(StorageManager.shared.isDarkMode, animated: false)
+                    //darkModeSwitch.isOn = StorageManager.shared.isDarkMode
+                    darkModeSwitch.isHidden = false
+                    iconImageView.image = menuItem.coloredIcon
+                case .logout:
+                    makeMenuItemRedColored()
+                default:
+                    iconImageView.image = menuItem.coloredIcon
             }
         }
     }

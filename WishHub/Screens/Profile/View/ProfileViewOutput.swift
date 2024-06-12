@@ -6,14 +6,19 @@
 //
 
 import Foundation
-import UIKit
 
 protocol ProfileViewOutput: BaseViewOutput {
-	func onBackButtonTap()
+    func viewDidLoaded()
+    func themeModeSwitcherIsTapped(isOn: Bool)
 }
 
 extension ProfilePresenter: ProfileViewOutput {
-	func onBackButtonTap() {
-		router.back()
-	}
+    
+    func viewDidLoaded() {
+        
+    }
+    
+    func themeModeSwitcherIsTapped(isOn: Bool) {
+        interactor.darkThemeStateChanged(isOn: isOn)
+    }
 }

@@ -9,6 +9,6 @@ import Foundation
 
 class ProfileInteractor: BaseInteractor<ProfileData> {
 	weak var presenter: ProfileInteractorOutput!
-	//var storageManager: StorageManager!
+	var storageManager: StorageManager!
 	var network: ProfileNetwork!
 }

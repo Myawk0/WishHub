@@ -122,6 +122,8 @@
 		904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */; };
 		904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BE2C19FC1000D3494B /* UserDataItem.swift */; };
 		904FC0C12C1A22FA00D3494B /* SegmentedButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */; };
+		904FC0C42C1A276600D3494B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0C32C1A276600D3494B /* StorageManager.swift */; };
+		904FC0C72C1A282C00D3494B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 904FC0C62C1A282C00D3494B /* KeychainAccess */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -243,6 +245,7 @@
 		904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
 		904FC0BE2C19FC1000D3494B /* UserDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataItem.swift; sourceTree = "<group>"; };
 		904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonType.swift; sourceTree = "<group>"; };
+		904FC0C32C1A276600D3494B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -259,6 +262,7 @@
 			files = (
 				904FBFAE2C15D2F800D3494B /* SnapKit in Frameworks */,
 				904FBFB02C15D2F800D3494B /* SnapKit-Dynamic in Frameworks */,
+				904FC0C72C1A282C00D3494B /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +968,14 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		904FC0C22C1A275200D3494B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0C32C1A276600D3494B /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		9068A2882C11E7D800FBE63F = {
 			isa = PBXGroup;
 			children = (
@@ -986,6 +998,7 @@
 				904FBF6E2C15C59B00D3494B /* App */,
 				904FBF6F2C15C5A500D3494B /* Screens */,
 				904FC0072C165B2200D3494B /* Models */,
+				904FC0C22C1A275200D3494B /* Managers */,
 				904FBFA92C15D29E00D3494B /* BaseViews */,
 				904FBFDE2C15E7F100D3494B /* CustomViews */,
 				904FBFF62C162A3B00D3494B /* Constants */,
@@ -1018,6 +1031,7 @@
 			packageProductDependencies = (
 				904FBFAD2C15D2F800D3494B /* SnapKit */,
 				904FBFAF2C15D2F800D3494B /* SnapKit-Dynamic */,
+				904FC0C62C1A282C00D3494B /* KeychainAccess */,
 			);
 			productName = WishHub;
 			productReference = 9068A2912C11E7D800FBE63F /* WishHub.app */;
@@ -1051,6 +1065,7 @@
 			packageReferences = (
 				904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				904FBFD42C15DE1500D3494B /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 9068A2922C11E7D800FBE63F /* Products */;
 			projectDirPath = "";
@@ -1153,6 +1168,7 @@
 				904FC0A82C17225000D3494B /* ProfileTableView.swift in Sources */,
 				904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */,
 				904FC09C2C1703EF00D3494B /* ProfileLocalization.swift in Sources */,
+				904FC0C42C1A276600D3494B /* StorageManager.swift in Sources */,
 				904FC0B82C174C4100D3494B /* UserDataCollectionViewCell.swift in Sources */,
 				904FC0942C1703EF00D3494B /* ProfileNetwork.swift in Sources */,
 				904FBFC82C15DB8200D3494B /* BaseViewOutput.swift in Sources */,
@@ -1445,6 +1461,14 @@
 				minimumVersion = 0.55.1;
 			};
 		};
+		904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1457,6 +1481,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		904FC0C62C1A282C00D3494B /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

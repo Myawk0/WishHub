@@ -15,11 +15,11 @@ enum TabBarItemType: CaseIterable {
     var itemTitle: String {
         switch self {
             case .friends:
-                return Localizable.TabBarItemTitle.friendsText
+                return Localizable.TabBarItem.friendsText
             case .wishlists:
-                return Localizable.TabBarItemTitle.wishlistsText
+                return Localizable.TabBarItem.wishlistsText
             case .profile:
-                return Localizable.TabBarItemTitle.profileText
+                return Localizable.TabBarItem.profileText
         }
     }
     
