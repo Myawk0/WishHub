@@ -120,6 +120,8 @@
 		904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B42C17478900D3494B /* UserDataCollectionView.swift */; };
 		904FC0B82C174C4100D3494B /* UserDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */; };
 		904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */; };
+		904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BE2C19FC1000D3494B /* UserDataItem.swift */; };
+		904FC0C12C1A22FA00D3494B /* SegmentedButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -239,6 +241,8 @@
 		904FC0B42C17478900D3494B /* UserDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionView.swift; sourceTree = "<group>"; };
 		904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionViewCell.swift; sourceTree = "<group>"; };
 		904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
+		904FC0BE2C19FC1000D3494B /* UserDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataItem.swift; sourceTree = "<group>"; };
+		904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonType.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -533,6 +537,8 @@
 			children = (
 				904FC0082C165B3400D3494B /* TabBarItemType.swift */,
 				904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */,
+				904FC0BE2C19FC1000D3494B /* UserDataItem.swift */,
+				904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1087,6 +1093,7 @@
 			files = (
 				904FBFB72C15D90B00D3494B /* UIViewController+Extension.swift in Sources */,
 				904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */,
+				904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */,
 				904FC06D2C167B5E00D3494B /* RequestsPageAssembly.swift in Sources */,
 				904FBF942C15C6D000D3494B /* FriendsLocalization.swift in Sources */,
 				904FBF8D2C15C6D000D3494B /* FriendsViewOutput.swift in Sources */,
@@ -1160,6 +1167,7 @@
 				904FC0502C167B0900D3494B /* ApplicationsPageInteractorInput.swift in Sources */,
 				904FC04F2C167B0900D3494B /* ApplicationsPageInteractor.swift in Sources */,
 				9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */,
+				904FC0C12C1A22FA00D3494B /* SegmentedButtonType.swift in Sources */,
 				904FC0A22C170BFD00D3494B /* Constants.swift in Sources */,
 				904FBFF52C1629DA00D3494B /* TabBarController.swift in Sources */,
 				904FC0542C167B0900D3494B /* ApplicationsPageRouter.swift in Sources */,

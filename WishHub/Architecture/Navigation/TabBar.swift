@@ -13,6 +13,7 @@ class TabBar: UITabBar {
     private let tabBarHeight: CGFloat = Constants.tabBarHeight
     private var roundLayer: CAShapeLayer?
     
+    
     // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)

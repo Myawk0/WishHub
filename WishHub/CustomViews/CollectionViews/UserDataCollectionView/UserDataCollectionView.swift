@@ -9,28 +9,42 @@ import UIKit
 
 class UserDataCollectionView: UICollectionView {
     
-    let userDataItems = UserDataItem.allCases
-    
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+    // MARK: UI elements
+    private lazy var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
-        
+        return layout
+    }()
+    
+    
+    // MARK: Properties
+    let userDataItems = UserDataItem.allCases
+    
+    
+    // MARK: Init
+    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         setupCollectionView()
+        setupAppearance()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    
+    // MARK: Setup cells
     private func setupCollectionView() {
         dataSource = self
         delegate = self
         register(UserDataCollectionViewCell.self, forCellWithReuseIdentifier: UserDataCollectionViewCell.className)
-        
+    }
+    
+    // MARK: Setup appearance
+    private func setupAppearance() {
         layer.cornerRadius = 16
         backgroundColor = .clear
         isScrollEnabled = false
@@ -39,6 +53,7 @@ class UserDataCollectionView: UICollectionView {
 
 
 // MARK: - UICollectionViewDataSource
+
 extension UserDataCollectionView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

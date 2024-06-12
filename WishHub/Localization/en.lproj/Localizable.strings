@@ -22,3 +22,8 @@
 "libraryAccessDeniedDescription" = "Для использования функции необходимо предоставить приложению доступ к использованию Галереи устройства";
 "cancelButtonText" = "Отменить";
 "openSettingsButtonText" = "Открыть настройки";
+
+// MARK: UserDataItem titles
+"presentsText" = "Подарки";
+"friendsText" = "Друзья";
+"subscribersText" = "Подписчики";

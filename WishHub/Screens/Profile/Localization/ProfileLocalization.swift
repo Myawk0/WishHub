@@ -8,6 +8,5 @@
 import Foundation
 
 class ProfileLocalization: BaseLocalization {
-    var header: String { localize("header") }
-    //var: String { localize("") }
+    var profileTitle: String { localize("profileTitle") }
 }

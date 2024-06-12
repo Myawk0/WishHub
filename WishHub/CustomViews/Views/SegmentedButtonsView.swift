@@ -7,23 +7,6 @@
 
 import UIKit
 
-enum ButtonType: CaseIterable {
-    case friends
-    case applications
-    case requests
-    
-    var title: String {
-        switch self {
-            case .friends:
-                return Localizable.TabBarItemTitle.friendsText
-            case .applications:
-                return Localizable.SegmentedButton.applicationsText
-            case .requests:
-                return Localizable.SegmentedButton.requestsText
-        }
-    }
-}
-
 class SegmentedButtonsView: UIView {
     
     // MARK: UI elements
@@ -53,7 +36,8 @@ class SegmentedButtonsView: UIView {
     
     // MARK: Variables
     private var buttons: [SegmentedButton] = []
-    var buttonType: ButtonType = .friends
+    var buttonType: SegmentedButtonType = .friends
+    
     
     // MARK: Init
     override init(frame: CGRect) {
@@ -102,7 +86,7 @@ class SegmentedButtonsView: UIView {
     
     // MARK: Methods
     private func setupButtons() {
-        for (index, type) in ButtonType.allCases.enumerated() {
+        for (index, type) in SegmentedButtonType.allCases.enumerated() {
             let button = SegmentedButton()
             button.title = type.title
             button.tag = index

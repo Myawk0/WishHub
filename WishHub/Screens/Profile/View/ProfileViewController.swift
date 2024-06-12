@@ -22,7 +22,7 @@ class ProfileViewController: BaseViewController {
     //MARK: - элементы UI
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Профиль"
+        label.text = localization.profileTitle
         label.font = Fonts.Title.h3
         label.textColor = .glossyGrape
         return label

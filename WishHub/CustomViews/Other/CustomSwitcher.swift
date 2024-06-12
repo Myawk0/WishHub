@@ -77,6 +77,7 @@ class CustomSwitcher: UIView {
         }
     }
     
+    
     // MARK: Methods
     @objc private func handleTap() {
         isOn.toggle()

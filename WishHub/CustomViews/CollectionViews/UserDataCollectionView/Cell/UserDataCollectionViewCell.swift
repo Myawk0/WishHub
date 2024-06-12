@@ -7,25 +7,9 @@
 
 import UIKit
 
-enum UserDataItem: CaseIterable {
-    case presents
-    case friends
-    case subscribers
-    
-    var title: String {
-        switch self {
-            case .presents:
-                return "Подарки"
-            case .friends:
-                return "Друзья"
-            case .subscribers:
-                return "Подписчики"
-        }
-    }
-}
-
 class UserDataCollectionViewCell: UICollectionViewCell {
     
+    // MARK: UI elements
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -56,6 +40,7 @@ class UserDataCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
+    // MARK: Properties
     var userData: UserDataItem! {
         didSet {
             titleLabel.text = userData.title
@@ -63,6 +48,7 @@ class UserDataCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -72,6 +58,8 @@ class UserDataCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    // MARK: Setup UI
     private func setupUI() {
         addSubviews()
         makeConstraints()

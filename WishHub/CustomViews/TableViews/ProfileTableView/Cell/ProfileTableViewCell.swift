@@ -9,6 +9,7 @@ import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
     
+    // MARK: UI elements
     private lazy var iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -29,26 +30,28 @@ class ProfileTableViewCell: UITableViewCell {
         return view
     }()
     
-    private lazy var modeSwitch: CustomSwitcher = {
+    private lazy var darkModeSwitch: CustomSwitcher = {
         let switcher = CustomSwitcher()
         switcher.isHidden = true
         return switcher
     }()
     
+    
+    // MARK: Properties
     var menuItem: ProfileMenuItem! {
         didSet {
             titleLabel.text = menuItem.title
-            modeSwitch.isHidden = menuItem != .mode
+            darkModeSwitch.isHidden = menuItem != .mode
             if menuItem == .logout {
-                iconImageView.image = menuItem.coloredIcon?.withTintColor(.mediumCarmine, renderingMode: .alwaysOriginal)
-                titleLabel.textColor = .mediumCarmine.withAlphaComponent(0.8)
-                separatorView.isHidden = true
+                makeMenuItemRedColored()
             } else {
                 iconImageView.image = menuItem.coloredIcon
             }
         }
     }
     
+    
+    // MARK: Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
@@ -58,6 +61,8 @@ class ProfileTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    // MARK: Setup UI
     private func setupUI() {
         addSubviews()
         makeConstraints()
@@ -71,7 +76,7 @@ class ProfileTableViewCell: UITableViewCell {
     private func addSubviews() {
         contentView.addSubview(iconImageView)
         contentView.addSubview(titleLabel)
-        contentView.addSubview(modeSwitch)
+        contentView.addSubview(darkModeSwitch)
         contentView.addSubview(separatorView)
     }
     
@@ -87,7 +92,7 @@ class ProfileTableViewCell: UITableViewCell {
             make.leading.equalTo(iconImageView.snp.trailing).offset(10)
         }
         
-        modeSwitch.snp.makeConstraints { make in
+        darkModeSwitch.snp.makeConstraints { make in
             make.trailing.equalToSuperview().inset(20)
             make.centerY.equalToSuperview()
             make.height.equalTo(22)
@@ -100,5 +105,13 @@ class ProfileTableViewCell: UITableViewCell {
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(1)
         }
+    }
+    
+    
+    // MARK: Methods
+    private func makeMenuItemRedColored() {
+        iconImageView.image = menuItem.coloredIcon?.withTintColor(.mediumCarmine, renderingMode: .alwaysOriginal)
+        titleLabel.textColor = .mediumCarmine.withAlphaComponent(0.8)
+        separatorView.isHidden = true
     }
 }
