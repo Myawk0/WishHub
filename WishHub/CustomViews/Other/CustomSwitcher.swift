@@ -30,7 +30,6 @@ class CustomSwitcher: UIView {
     var isOn: Bool = false {
         didSet {
             NotificationCenter.default.post(name: .switcherStateChanged, object: nil, userInfo: ["isOn": isOn])
-            self.updateLayoutRecursively()
         }
     }
     
@@ -84,15 +83,16 @@ class CustomSwitcher: UIView {
     
     func updateSwitchState(_ isOn: Bool, animated: Bool) {
         self.isOn = isOn
-        updateSwitchState(animated: animated)
+        updateSwitchState(animated: false)
     }
     
     func updateSwitchState(animated: Bool) {
-        let backgroundColor = isOn ? onTintColor : offTintColor
-        let thumbPosition = isOn ? bounds.width - 21 : 1
+        let backgroundColor: UIColor = isOn ? onTintColor : offTintColor
+        let thumbPosition: CGFloat = isOn ? 19 : 1
         
+        updateLayoutRecursively()
         if animated {
-            UIView.animate(withDuration: 0.6) {
+            UIView.animate(withDuration: 0.3) {
                 self.switchBackgroundView.backgroundColor = backgroundColor
                 self.switchThumbView.frame.origin.x = thumbPosition
             }

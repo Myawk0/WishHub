@@ -119,7 +119,12 @@ class ProfileViewController: BaseViewController {
     private func setupThemeSwitcher() {
         NotificationCenter.default.addObserver(forName: .switcherStateChanged, object: nil, queue: nil) { notification in
             if let isOn = notification.userInfo?["isOn"] as? Bool {
-                UIApplication.shared.keyWindow?.overrideUserInterfaceStyle = isOn ? .dark : .light
+
+                if let window = UIApplication.shared.keyWindow {
+                    UIView.transition (with: window, duration: 0.3, options: .transitionCrossDissolve) {
+                        window.overrideUserInterfaceStyle = isOn ? .dark : .light
+                    }
+                }
                 
                 let tabBar = self.tabBarController?.tabBar as? TabBar
                 tabBar?.changeColors(isDarkTheme: isOn)
