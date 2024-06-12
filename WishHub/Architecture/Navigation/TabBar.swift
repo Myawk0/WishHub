@@ -45,7 +45,7 @@ class TabBar: UITabBar {
         guard let roundLayer else { return }
         roundLayer.fillColor = isDarkTheme ? UIColor.glossyGrape.cgColor : UIColor.ghostWhite.cgColor
         tintColor = isDarkTheme ? .glossyGrapeDark : .glossyGrape
-        unselectedItemTintColor = isDarkTheme ? .brightGray : .slateGray
+        unselectedItemTintColor = isDarkTheme ? .independence : .slateGray
     }
     
     private func roundTopEdge() {
