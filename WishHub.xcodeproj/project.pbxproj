@@ -98,6 +98,32 @@
 		904FC0772C167B5E00D3494B /* RequestsPageLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0692C167B5D00D3494B /* RequestsPageLocalization.swift */; };
 		904FC0782C167B5E00D3494B /* RequestsPageLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904FC06A2C167B5D00D3494B /* RequestsPageLocalization.strings */; };
 		904FC0792C167B5E00D3494B /* RequestsPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC06C2C167B5D00D3494B /* RequestsPageRouter.swift */; };
+		904FC0922C1703EF00D3494B /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC07E2C1703EF00D3494B /* ProfileAssembly.swift */; };
+		904FC0932C1703EF00D3494B /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0802C1703EF00D3494B /* ProfilePresenter.swift */; };
+		904FC0942C1703EF00D3494B /* ProfileNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0822C1703EF00D3494B /* ProfileNetwork.swift */; };
+		904FC0952C1703EF00D3494B /* ProfileViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0842C1703EF00D3494B /* ProfileViewInput.swift */; };
+		904FC0962C1703EF00D3494B /* ProfileViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0852C1703EF00D3494B /* ProfileViewOutput.swift */; };
+		904FC0972C1703EF00D3494B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0862C1703EF00D3494B /* ProfileViewController.swift */; };
+		904FC0982C1703EF00D3494B /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0882C1703EF00D3494B /* ProfileData.swift */; };
+		904FC0992C1703EF00D3494B /* ProfileInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC08A2C1703EF00D3494B /* ProfileInteractorOutput.swift */; };
+		904FC09A2C1703EF00D3494B /* ProfileInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC08B2C1703EF00D3494B /* ProfileInteractorInput.swift */; };
+		904FC09B2C1703EF00D3494B /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC08C2C1703EF00D3494B /* ProfileInteractor.swift */; };
+		904FC09C2C1703EF00D3494B /* ProfileLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC08E2C1703EF00D3494B /* ProfileLocalization.swift */; };
+		904FC09D2C1703EF00D3494B /* ProfileLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 904FC08F2C1703EF00D3494B /* ProfileLocalization.strings */; };
+		904FC09E2C1703EF00D3494B /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0912C1703EF00D3494B /* ProfileRouter.swift */; };
+		904FC0A02C170B1800D3494B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC09F2C170B1700D3494B /* TabBar.swift */; };
+		904FC0A22C170BFD00D3494B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0A12C170BFD00D3494B /* Constants.swift */; };
+		904FC0A82C17225000D3494B /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0A72C17225000D3494B /* ProfileTableView.swift */; };
+		904FC0AC2C17345600D3494B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */; };
+		904FC0AE2C17425C00D3494B /* CustomSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */; };
+		904FC0B02C17427E00D3494B /* ProfileMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */; };
+		904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B42C17478900D3494B /* UserDataCollectionView.swift */; };
+		904FC0B82C174C4100D3494B /* UserDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */; };
+		904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */; };
+		904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BE2C19FC1000D3494B /* UserDataItem.swift */; };
+		904FC0C12C1A22FA00D3494B /* SegmentedButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */; };
+		904FC0C42C1A276600D3494B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0C32C1A276600D3494B /* StorageManager.swift */; };
+		904FC0C72C1A282C00D3494B /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 904FC0C62C1A282C00D3494B /* KeychainAccess */; };
 		9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2942C11E7D800FBE63F /* AppDelegate.swift */; };
 		9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9068A2962C11E7D800FBE63F /* SceneDelegate.swift */; };
 		9068A29E2C11E7DB00FBE63F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9068A29D2C11E7DB00FBE63F /* Assets.xcassets */; };
@@ -195,6 +221,31 @@
 		904FC0692C167B5D00D3494B /* RequestsPageLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageLocalization.swift; sourceTree = "<group>"; };
 		904FC06A2C167B5D00D3494B /* RequestsPageLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = RequestsPageLocalization.strings; sourceTree = "<group>"; };
 		904FC06C2C167B5D00D3494B /* RequestsPageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsPageRouter.swift; sourceTree = "<group>"; };
+		904FC07E2C1703EF00D3494B /* ProfileAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
+		904FC0802C1703EF00D3494B /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		904FC0822C1703EF00D3494B /* ProfileNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNetwork.swift; sourceTree = "<group>"; };
+		904FC0842C1703EF00D3494B /* ProfileViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewInput.swift; sourceTree = "<group>"; };
+		904FC0852C1703EF00D3494B /* ProfileViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewOutput.swift; sourceTree = "<group>"; };
+		904FC0862C1703EF00D3494B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		904FC0882C1703EF00D3494B /* ProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		904FC08A2C1703EF00D3494B /* ProfileInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractorOutput.swift; sourceTree = "<group>"; };
+		904FC08B2C1703EF00D3494B /* ProfileInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractorInput.swift; sourceTree = "<group>"; };
+		904FC08C2C1703EF00D3494B /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		904FC08E2C1703EF00D3494B /* ProfileLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLocalization.swift; sourceTree = "<group>"; };
+		904FC08F2C1703EF00D3494B /* ProfileLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ProfileLocalization.strings; sourceTree = "<group>"; };
+		904FC0912C1703EF00D3494B /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		904FC09F2C170B1700D3494B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		904FC0A12C170BFD00D3494B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		904FC0A72C17225000D3494B /* ProfileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
+		904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitcher.swift; sourceTree = "<group>"; };
+		904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuItem.swift; sourceTree = "<group>"; };
+		904FC0B42C17478900D3494B /* UserDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionView.swift; sourceTree = "<group>"; };
+		904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionViewCell.swift; sourceTree = "<group>"; };
+		904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
+		904FC0BE2C19FC1000D3494B /* UserDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataItem.swift; sourceTree = "<group>"; };
+		904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedButtonType.swift; sourceTree = "<group>"; };
+		904FC0C32C1A276600D3494B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		9068A2912C11E7D800FBE63F /* WishHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068A2942C11E7D800FBE63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9068A2962C11E7D800FBE63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +262,7 @@
 			files = (
 				904FBFAE2C15D2F800D3494B /* SnapKit in Frameworks */,
 				904FBFB02C15D2F800D3494B /* SnapKit-Dynamic in Frameworks */,
+				904FC0C72C1A282C00D3494B /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +283,7 @@
 			children = (
 				904FBF732C15C6D000D3494B /* Friends */,
 				904FC00A2C1679BB00D3494B /* FriendsSubscreens */,
+				904FC07C2C1703EF00D3494B /* Profile */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -338,6 +391,7 @@
 				904FBFB62C15D90B00D3494B /* UIViewController+Extension.swift */,
 				904FBF9C2C15C7EE00D3494B /* NSObject+Extension.swift */,
 				904FBFA52C15D16900D3494B /* UIApplication+Extension.swift */,
+				904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -429,8 +483,11 @@
 		904FBFDE2C15E7F100D3494B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */,
-				904FBFF02C161EE600D3494B /* SegmentedButton.swift */,
+				904FC0B92C17669B00D3494B /* Views */,
+				904FC0BA2C1766A000D3494B /* Buttons */,
+				904FC0B22C17474F00D3494B /* CollectionViews */,
+				904FC0B12C17474800D3494B /* TableViews */,
+				904FC0BB2C1766AA00D3494B /* Other */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -448,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				904FBFF42C1629DA00D3494B /* TabBarController.swift */,
+				904FC09F2C170B1700D3494B /* TabBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -455,6 +513,7 @@
 		904FBFF62C162A3B00D3494B /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				904FC0A12C170BFD00D3494B /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -481,6 +540,9 @@
 			isa = PBXGroup;
 			children = (
 				904FC0082C165B3400D3494B /* TabBarItemType.swift */,
+				904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */,
+				904FC0BE2C19FC1000D3494B /* UserDataItem.swift */,
+				904FC0C02C1A22FA00D3494B /* SegmentedButtonType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -748,6 +810,172 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		904FC07C2C1703EF00D3494B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				904FC07D2C1703EF00D3494B /* Assembly */,
+				904FC0872C1703EF00D3494B /* Data */,
+				904FC08D2C1703EF00D3494B /* Localization */,
+				904FC0812C1703EF00D3494B /* Network */,
+				904FC0892C1703EF00D3494B /* Interactor */,
+				904FC0902C1703EF00D3494B /* Router */,
+				904FC07F2C1703EF00D3494B /* Presenter */,
+				904FC0832C1703EF00D3494B /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		904FC07D2C1703EF00D3494B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				904FC07E2C1703EF00D3494B /* ProfileAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		904FC07F2C1703EF00D3494B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0802C1703EF00D3494B /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		904FC0812C1703EF00D3494B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0822C1703EF00D3494B /* ProfileNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		904FC0832C1703EF00D3494B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0842C1703EF00D3494B /* ProfileViewInput.swift */,
+				904FC0852C1703EF00D3494B /* ProfileViewOutput.swift */,
+				904FC0862C1703EF00D3494B /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		904FC0872C1703EF00D3494B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0882C1703EF00D3494B /* ProfileData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		904FC0892C1703EF00D3494B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				904FC08A2C1703EF00D3494B /* ProfileInteractorOutput.swift */,
+				904FC08B2C1703EF00D3494B /* ProfileInteractorInput.swift */,
+				904FC08C2C1703EF00D3494B /* ProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		904FC08D2C1703EF00D3494B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				904FC08E2C1703EF00D3494B /* ProfileLocalization.swift */,
+				904FC08F2C1703EF00D3494B /* ProfileLocalization.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		904FC0902C1703EF00D3494B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0912C1703EF00D3494B /* ProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		904FC0A92C17343600D3494B /* ProfileTableView */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0AA2C17344000D3494B /* Cell */,
+				904FC0A72C17225000D3494B /* ProfileTableView.swift */,
+			);
+			path = ProfileTableView;
+			sourceTree = "<group>";
+		};
+		904FC0AA2C17344000D3494B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		904FC0B12C17474800D3494B /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0A92C17343600D3494B /* ProfileTableView */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		904FC0B22C17474F00D3494B /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0B32C17475F00D3494B /* UserDataCollectionView */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		904FC0B32C17475F00D3494B /* UserDataCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0B62C174C2700D3494B /* Cell */,
+				904FC0B42C17478900D3494B /* UserDataCollectionView.swift */,
+			);
+			path = UserDataCollectionView;
+			sourceTree = "<group>";
+		};
+		904FC0B62C174C2700D3494B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		904FC0B92C17669B00D3494B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFEE2C16139200D3494B /* SegmentedButtonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		904FC0BA2C1766A000D3494B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				904FBFF02C161EE600D3494B /* SegmentedButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		904FC0BB2C1766AA00D3494B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		904FC0C22C1A275200D3494B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				904FC0C32C1A276600D3494B /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		9068A2882C11E7D800FBE63F = {
 			isa = PBXGroup;
 			children = (
@@ -770,6 +998,7 @@
 				904FBF6E2C15C59B00D3494B /* App */,
 				904FBF6F2C15C5A500D3494B /* Screens */,
 				904FC0072C165B2200D3494B /* Models */,
+				904FC0C22C1A275200D3494B /* Managers */,
 				904FBFA92C15D29E00D3494B /* BaseViews */,
 				904FBFDE2C15E7F100D3494B /* CustomViews */,
 				904FBFF62C162A3B00D3494B /* Constants */,
@@ -802,6 +1031,7 @@
 			packageProductDependencies = (
 				904FBFAD2C15D2F800D3494B /* SnapKit */,
 				904FBFAF2C15D2F800D3494B /* SnapKit-Dynamic */,
+				904FC0C62C1A282C00D3494B /* KeychainAccess */,
 			);
 			productName = WishHub;
 			productReference = 9068A2912C11E7D800FBE63F /* WishHub.app */;
@@ -835,6 +1065,7 @@
 			packageReferences = (
 				904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */,
 				904FBFD42C15DE1500D3494B /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 9068A2922C11E7D800FBE63F /* Products */;
 			projectDirPath = "";
@@ -853,6 +1084,7 @@
 				904FC0782C167B5E00D3494B /* RequestsPageLocalization.strings in Resources */,
 				904FC02E2C167A8B00D3494B /* FriendsPageLocalization.strings in Resources */,
 				904FC0532C167B0900D3494B /* ApplicationsPageLocalization.strings in Resources */,
+				904FC09D2C1703EF00D3494B /* ProfileLocalization.strings in Resources */,
 				9068A2A12C11E7DB00FBE63F /* LaunchScreen.storyboard in Resources */,
 				904FBFDA2C15E19D00D3494B /* Colors.xcassets in Resources */,
 				904FBFE92C15EFAA00D3494B /* Ubuntu-Medium.ttf in Resources */,
@@ -876,14 +1108,18 @@
 			files = (
 				904FBFB72C15D90B00D3494B /* UIViewController+Extension.swift in Sources */,
 				904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */,
+				904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */,
 				904FC06D2C167B5E00D3494B /* RequestsPageAssembly.swift in Sources */,
 				904FBF942C15C6D000D3494B /* FriendsLocalization.swift in Sources */,
 				904FBF8D2C15C6D000D3494B /* FriendsViewOutput.swift in Sources */,
 				904FC04B2C167B0900D3494B /* ApplicationsPageViewInput.swift in Sources */,
 				904FC0292C167A8B00D3494B /* FriendsPageData.swift in Sources */,
+				904FC0972C1703EF00D3494B /* ProfileViewController.swift in Sources */,
 				904FC0742C167B5E00D3494B /* RequestsPageInteractorInput.swift in Sources */,
+				904FC09B2C1703EF00D3494B /* ProfileInteractor.swift in Sources */,
 				904FC0242C167A8B00D3494B /* FriendsPagePresenter.swift in Sources */,
 				904FBF8A2C15C6D000D3494B /* FriendsPresenter.swift in Sources */,
+				904FC09A2C1703EF00D3494B /* ProfileInteractorInput.swift in Sources */,
 				904FC0092C165B3400D3494B /* TabBarItemType.swift in Sources */,
 				904FC06E2C167B5E00D3494B /* RequestsPagePresenter.swift in Sources */,
 				904FC0762C167B5E00D3494B /* RequestsPageInteractor.swift in Sources */,
@@ -898,9 +1134,13 @@
 				904FBFA42C15D07E00D3494B /* KeyboardService.swift in Sources */,
 				904FBFAB2C15D2AC00D3494B /* HeaderViewController.swift in Sources */,
 				904FC0522C167B0900D3494B /* ApplicationsPageLocalization.swift in Sources */,
+				904FC09E2C1703EF00D3494B /* ProfileRouter.swift in Sources */,
 				904FC0792C167B5E00D3494B /* RequestsPageRouter.swift in Sources */,
 				904FC02D2C167A8B00D3494B /* FriendsPageLocalization.swift in Sources */,
+				904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */,
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
+				904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */,
+				904FC0952C1703EF00D3494B /* ProfileViewInput.swift in Sources */,
 				904FC0042C1633FF00D3494B /* UIView+Extension.swift in Sources */,
 				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,
 				904FC02C2C167A8B00D3494B /* FriendsPageInteractorOutput.swift in Sources */,
@@ -911,6 +1151,8 @@
 				904FC0232C167A8B00D3494B /* FriendsPageAssembly.swift in Sources */,
 				904FBFEF2C16139200D3494B /* SegmentedButtonsView.swift in Sources */,
 				904FBF9F2C15C93400D3494B /* BaseAssembly.swift in Sources */,
+				904FC0982C1703EF00D3494B /* ProfileData.swift in Sources */,
+				904FC0992C1703EF00D3494B /* ProfileInteractorOutput.swift in Sources */,
 				904FC04D2C167B0900D3494B /* ApplicationsPageViewController.swift in Sources */,
 				904FC04E2C167B0900D3494B /* ApplicationsPageData.swift in Sources */,
 				904FC0712C167B5E00D3494B /* RequestsPageViewOutput.swift in Sources */,
@@ -923,7 +1165,12 @@
 				904FC0282C167A8B00D3494B /* FriendsPageViewController.swift in Sources */,
 				904FC0722C167B5E00D3494B /* RequestsPageViewInput.swift in Sources */,
 				904FC02B2C167A8B00D3494B /* FriendsPageInteractorInput.swift in Sources */,
+				904FC0A82C17225000D3494B /* ProfileTableView.swift in Sources */,
 				904FBFCD2C15DC5800D3494B /* BaseNetwork.swift in Sources */,
+				904FC09C2C1703EF00D3494B /* ProfileLocalization.swift in Sources */,
+				904FC0C42C1A276600D3494B /* StorageManager.swift in Sources */,
+				904FC0B82C174C4100D3494B /* UserDataCollectionViewCell.swift in Sources */,
+				904FC0942C1703EF00D3494B /* ProfileNetwork.swift in Sources */,
 				904FBFC82C15DB8200D3494B /* BaseViewOutput.swift in Sources */,
 				904FBFBA2C15D9E800D3494B /* BaseInteractor.swift in Sources */,
 				904FC0752C167B5E00D3494B /* RequestsPageInteractorOutput.swift in Sources */,
@@ -931,28 +1178,37 @@
 				904FC0022C1630FD00D3494B /* UIImage+Extension.swift in Sources */,
 				904FC0262C167A8B00D3494B /* FriendsPageViewInput.swift in Sources */,
 				904FC06F2C167B5E00D3494B /* RequestsPageNetwork.swift in Sources */,
+				904FC0962C1703EF00D3494B /* ProfileViewOutput.swift in Sources */,
 				904FBFE02C15E80D00D3494B /* Fonts.swift in Sources */,
 				904FC0502C167B0900D3494B /* ApplicationsPageInteractorInput.swift in Sources */,
 				904FC04F2C167B0900D3494B /* ApplicationsPageInteractor.swift in Sources */,
 				9068A2972C11E7D800FBE63F /* SceneDelegate.swift in Sources */,
+				904FC0C12C1A22FA00D3494B /* SegmentedButtonType.swift in Sources */,
+				904FC0A22C170BFD00D3494B /* Constants.swift in Sources */,
 				904FBFF52C1629DA00D3494B /* TabBarController.swift in Sources */,
 				904FC0542C167B0900D3494B /* ApplicationsPageRouter.swift in Sources */,
 				904FBFA62C15D16900D3494B /* UIApplication+Extension.swift in Sources */,
 				904FBF922C15C6D000D3494B /* FriendsInteractorInput.swift in Sources */,
+				904FC0922C1703EF00D3494B /* ProfileAssembly.swift in Sources */,
 				904FC02A2C167A8B00D3494B /* FriendsPageInteractor.swift in Sources */,
 				904FBF902C15C6D000D3494B /* FriendsInteractor.swift in Sources */,
 				904FBFC12C15DA7700D3494B /* BaseRouter.swift in Sources */,
 				904FC0732C167B5E00D3494B /* RequestsPageData.swift in Sources */,
 				904FBF8E2C15C6D000D3494B /* FriendsViewInput.swift in Sources */,
+				904FC0AE2C17425C00D3494B /* CustomSwitcher.swift in Sources */,
+				904FC0B02C17427E00D3494B /* ProfileMenuItem.swift in Sources */,
+				904FC0AC2C17345600D3494B /* ProfileTableViewCell.swift in Sources */,
 				904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */,
 				904FC0512C167B0900D3494B /* ApplicationsPageInteractorOutput.swift in Sources */,
 				904FC04C2C167B0900D3494B /* ApplicationsPageViewOutput.swift in Sources */,
 				904FBFA82C15D23B00D3494B /* KeyboardSensitiveConstraints.swift in Sources */,
 				904FC0252C167A8B00D3494B /* FriendsPageNetwork.swift in Sources */,
 				904FC0482C167B0900D3494B /* ApplicationsPageAssembly.swift in Sources */,
+				904FC0932C1703EF00D3494B /* ProfilePresenter.swift in Sources */,
 				904FC0002C162A7F00D3494B /* Localizable.swift in Sources */,
 				904FBF892C15C6D000D3494B /* FriendsAssembly.swift in Sources */,
 				904FC0772C167B5E00D3494B /* RequestsPageLocalization.swift in Sources */,
+				904FC0A02C170B1800D3494B /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,6 +1461,14 @@
 				minimumVersion = 0.55.1;
 			};
 		};
+		904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1217,6 +1481,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		904FC0C62C1A282C00D3494B /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -10,19 +10,18 @@ import SnapKit
 
 class HeaderViewController: UIView {
     
+    // MARK: Structs and enums
     enum ButtonAlignment {
         case left, right
     }
     
+    // MARK: Properties
     private var buttonWidth: CGFloat = 40.0
     private var leftButtons: [UIButton] = []
     private var rightButtons: [UIButton] = []
-    
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        let view = super.hitTest(point, with: event)
-        return view == self ? nil : view
-    }
-    
+
+
+    // MARK: UI elements
     lazy var titleLabel: UILabel = {
         let view = UILabel()
         view.textAlignment = .center
@@ -49,6 +48,8 @@ class HeaderViewController: UIView {
         return stack
     }()
     
+    
+    // MARK: Properties
     var height: CGFloat = 0 {
         didSet {
             snp.remakeConstraints { make in
@@ -64,6 +65,8 @@ class HeaderViewController: UIView {
         set { titleLabel.text = newValue }
     }
     
+    
+    // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -77,10 +80,11 @@ class HeaderViewController: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupSubviews(){
-        addSubview(titleLabel)
-        addSubview(leftStack)
-        addSubview(rightStack)
+    
+    // MARK: Override method
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let view = super.hitTest(point, with: event)
+        return view == self ? nil : view
     }
     
     //MARK: - TitleLable functionality
@@ -151,6 +155,12 @@ class HeaderViewController: UIView {
 //        return button
 //    }
     
+    private func setupSubviews(){
+        addSubview(titleLabel)
+        addSubview(leftStack)
+        addSubview(rightStack)
+    }
+    
     private func addConstraints() {
         titleLabel.snp.makeConstraints { make in
             make.right.equalTo(rightStack.snp.left)
@@ -165,12 +175,6 @@ class HeaderViewController: UIView {
         rightStack.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
             make.right.equalToSuperview().inset(16)
-        }
-    }
-    
-    func updateLeftStackConstraints(space: CGFloat = 24) {
-        leftStack.snp.updateConstraints { make in
-            make.top.left.equalToSuperview().inset(space)
         }
     }
 }

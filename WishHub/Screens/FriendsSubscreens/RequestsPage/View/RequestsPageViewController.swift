@@ -30,7 +30,7 @@ class RequestsPageViewController: BaseViewController {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Не боись сделать первый шаг"
-        label.font = Fonts.Body.large
+        label.font = Fonts.Label.big
         label.textColor = .darkPastelPurple
         return label
     }()
@@ -38,7 +38,7 @@ class RequestsPageViewController: BaseViewController {
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Нужно всего лишь нажать на кнопку ниже и найти друзей!"
-        label.font = Fonts.Body.medium
+        label.font = Fonts.Label.medium
         label.textColor = .slateGray
         label.numberOfLines = 0
         label.textAlignment = .center

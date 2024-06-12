@@ -10,13 +10,12 @@ import UIKit
 class SegmentedButton: UIButton {
     
     // MARK: - Variables
-    
     var buttonBorder: CALayer?
     var buttonIsTapped: ((SegmentedButton)->())?
     
     override var isSelected: Bool {
         didSet {
-            let color: UIColor = isSelected ? selectedColor : .slateGray
+            let color: UIColor = isSelected ? selectedColor : .independence
             setTitleColor(color, for: .normal)
             //backgroundColor = isSelected ? .brightGray : .ghostWhite
             isSelected ? addBottomBorder() : removeBottomBorder()
@@ -32,8 +31,8 @@ class SegmentedButton: UIButton {
     
     private let selectedColor: UIColor = .darkPastelPurple
     
-    // MARK: - Init
     
+    // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupAppearance()
@@ -43,22 +42,24 @@ class SegmentedButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - layoutSubviews
     
+    // MARK: - layoutSubviews
     override func layoutSubviews() {
         super.layoutSubviews()
         isSelected ? addBottomBorder() : removeBottomBorder()
     }
     
-    // MARK: - Methods
     
+    // MARK: - Setup UI
     private func setupAppearance() {
         layer.cornerRadius = 16
-        setTitleColor(.slateGray, for: .normal)
-        titleLabel?.font = Fonts.Body.large
+        setTitleColor(.independence, for: .normal)
+        titleLabel?.font = Fonts.Label.big
         setupAction()
     }
     
+    
+    // MARK: - Methods
     private func setupAction() {
         let action = UIAction { _ in
             self.buttonIsTapped?(self)
