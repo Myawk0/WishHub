@@ -8,9 +8,9 @@
 import Foundation
 
 protocol ApplicationsPageInteractorInput: BaseInteractorInput {
-    
+
 }
 
 extension ApplicationsPageInteractor: ApplicationsPageInteractorInput {
-    
+
 }

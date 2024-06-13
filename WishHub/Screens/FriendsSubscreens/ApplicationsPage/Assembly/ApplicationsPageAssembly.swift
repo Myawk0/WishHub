@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 class ApplicationsPageAssembly: BaseAssembly {
 	static func assemble(data: ApplicationsPageData? = nil) -> ApplicationsPageViewController {
@@ -16,20 +15,20 @@ class ApplicationsPageAssembly: BaseAssembly {
 		let interactor = ApplicationsPageInteractor()
 		let network = ApplicationsPageNetwork()
 		let localization = ApplicationsPageLocalization()
-        
+
 		view.presenter = presenter
 		view.localization = localization
-        
+
 		presenter.view = view
 		presenter.interactor = interactor
 		presenter.router = router
 		presenter.localization = localization
-        
+
 		interactor.presenter = presenter
 		interactor.data = data ?? ApplicationsPageData()
-		//interactor.storageManager = StorageManager.shared
+		// interactor.storageManager = StorageManager.shared
 		interactor.network = network
-        
+
 		return view
 	}
 }

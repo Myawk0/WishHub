@@ -9,6 +9,6 @@ import Foundation
 
 class RequestsPageInteractor: BaseInteractor<RequestsPageData> {
 	weak var presenter: RequestsPageInteractorOutput!
-	//var storageManager: StorageManager!
+	// var storageManager: StorageManager!
 	var network: RequestsPageNetwork!
 }

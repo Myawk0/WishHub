@@ -1,0 +1,16 @@
+line_length:
+- 200 # warning
+- 300 # error
+
+identifier_name:
+  min_length:
+    warning: 1
+    error: 1
+  max_length:
+    warning: 50
+    error: 60
+
+disabled_rules:
+  - switch_case_alignment
+  - trailing_whitespace
+  - void_function_in_ternary

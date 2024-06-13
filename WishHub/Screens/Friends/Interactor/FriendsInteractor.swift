@@ -9,6 +9,6 @@ import Foundation
 
 class FriendsInteractor: BaseInteractor<FriendsData> {
 	weak var presenter: FriendsInteractorOutput!
-	//var storageManager: StorageManager!
+	// var storageManager: StorageManager!
 	var network: FriendsNetwork!
 }

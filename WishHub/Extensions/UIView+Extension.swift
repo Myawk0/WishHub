@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIView {
-    
+
     func getParentViewController() -> UIViewController? {
         var responder: UIResponder? = self
         while responder != nil {
@@ -19,14 +19,14 @@ extension UIView {
         }
         return nil
     }
-    
+
     func updateLayoutRecursively() {
         layoutIfNeeded()
         if let superview {
             superview.updateLayoutRecursively()
         }
     }
-    
+
     func addShadow(color: UIColor = .lightGray,
                    opacity: Float = 1,
                    radius: CGFloat = 1,
@@ -36,7 +36,7 @@ extension UIView {
         layer.shadowOffset = offset
         layer.shadowColor = color.cgColor
     }
-    
+
     enum ViewEdge {
         case left
         case top
@@ -45,7 +45,7 @@ extension UIView {
         case all
         case none
     }
-    
+
     func roundEdge(_ edge: ViewEdge) {
         switch edge {
             case .left:

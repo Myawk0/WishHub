@@ -19,6 +19,6 @@ extension BaseFontProtocol {
 
 enum BaseFontStyle: String {
     case regular, medium, bold, semibold, light, black, thin, italic
-    
+
     var value: String { rawValue.firstCapitalized }
 }

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class ProfilePresenter: BasePresenter {
     weak var view: ProfileViewInput!
     var interactor: ProfileInteractorInput!

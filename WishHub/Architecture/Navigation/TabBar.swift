@@ -8,30 +8,28 @@
 import UIKit
 
 class TabBar: UITabBar {
-    
-    //MARK: Properties
+
+    // MARK: Properties
     private let tabBarHeight: CGFloat = Constants.tabBarHeight
     private var roundLayer: CAShapeLayer?
-    
-    
+
     // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         roundTopEdge()
         setupTabBarAppearance()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
-    
+
     // MARK: Override methods
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         let superSize = super.sizeThatFits(size)
         return CGSize(width: superSize.width, height: tabBarHeight)
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         var tabFrame = frame
@@ -39,8 +37,7 @@ class TabBar: UITabBar {
         tabFrame.origin.y = frame.origin.y + (frame.height - tabBarHeight)
         frame = tabFrame
     }
-    
-    
+
     // MARK: Methods
     func changeColors(isDarkTheme: Bool) {
         guard let roundLayer else { return }
@@ -48,7 +45,7 @@ class TabBar: UITabBar {
         tintColor = isDarkTheme ? .glossyGrapeDark : .glossyGrape
         unselectedItemTintColor = isDarkTheme ? .independence : .slateGray
     }
-    
+
     private func roundTopEdge() {
         let roundLayer = CAShapeLayer()
         let bezierPath = UIBezierPath(
@@ -60,23 +57,23 @@ class TabBar: UITabBar {
             ),
             cornerRadius: 20
         )
-        
+
         roundLayer.path = bezierPath.cgPath
         layer.insertSublayer(roundLayer, at: 0)
-        
+
         itemWidth = bounds.width / 4
         itemPositioning = .centered
         roundLayer.fillColor = UIColor.ghostWhite.cgColor
         self.roundLayer = roundLayer
     }
-    
+
     private func setupTabBarAppearance() {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Fonts.Body.small], for: .normal)
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -8)
-       
+
         tintColor = .glossyGrape
         unselectedItemTintColor = .slateGray
-        
+
         shadowImage = UIImage()
         backgroundImage = UIImage()
         backgroundColor = .clear

@@ -9,24 +9,21 @@ import Foundation
 import UIKit
 
 class FriendsPageViewController: BaseViewController {
-    
 
-    //MARK: - архитектура
+    // MARK: - архитектура
     var localization: FriendsPageLocalization!
     var presenter: FriendsPageViewOutput!
 
+    // MARK: - структуры и перечисления
 
-    //MARK: - структуры и перечисления
-
-
-    //MARK: - элементы UI
+    // MARK: - элементы UI
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = Images.FriendsPages.friends
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
-    
+
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Нет друзей?"
@@ -34,7 +31,7 @@ class FriendsPageViewController: BaseViewController {
         label.textColor = .darkPastelPurple
         return label
     }()
-    
+
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Кажется, у тебя еще нет друзей. Давай найдем!"
@@ -45,23 +42,20 @@ class FriendsPageViewController: BaseViewController {
         return label
     }()
 
+    // MARK: - переменные
 
-    //MARK: - переменные
-
-
-    //MARK: - жизненный цикл контроллера
+    // MARK: - жизненный цикл контроллера
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
 
-
-    //MARK: - настройка UI
+    // MARK: - настройка UI
     private func setupUI() {
         addSubviews()
         makeConstraints()
     }
-    
+
     private func addSubviews() {
         view.addSubview(imageView)
         view.addSubview(titleLabel)
@@ -74,18 +68,18 @@ class FriendsPageViewController: BaseViewController {
             make.centerX.equalToSuperview().offset(50)
             make.height.equalTo(300)
         }
-        
+
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(imageView.snp.bottom).offset(30)
             make.centerX.equalToSuperview()
         }
-        
+
         descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview().inset(30)
             make.centerX.equalToSuperview()
         }
     }
-    
-    //MARK: - методы и функции
+
+    // MARK: - методы и функции
 }

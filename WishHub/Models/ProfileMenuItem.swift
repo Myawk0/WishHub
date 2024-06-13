@@ -12,24 +12,24 @@ enum ProfileMenuItem: CaseIterable {
     case settings
     case changePassword
     case logout
-    
+
     var coloredIcon: UIImage? {
         return icon?.withTintColor(.glossyGrape, renderingMode: .alwaysOriginal)
     }
-    
+
     var title: String {
         switch self {
-            case .mode:
-                return "Темный режим"
-            case .settings:
-                return "Настройки"
-            case .changePassword:
-                return "Изменить пароль"
-            case .logout:
-                return "Выйти из аккаунта"
+        case .mode:
+            return "Темный режим"
+        case .settings:
+            return "Настройки"
+        case .changePassword:
+            return "Изменить пароль"
+        case .logout:
+            return "Выйти из аккаунта"
         }
     }
-    
+
     private var icon: UIImage? {
         switch self {
             case .mode:

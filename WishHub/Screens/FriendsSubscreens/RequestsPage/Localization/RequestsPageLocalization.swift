@@ -9,5 +9,5 @@ import Foundation
 
 class RequestsPageLocalization: BaseLocalization {
     var header: String { localize("header") }
-    //var: String { localize("") }
+    // var: String { localize("") }
 }

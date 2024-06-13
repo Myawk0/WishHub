@@ -11,7 +11,7 @@ enum SegmentedButtonType: CaseIterable {
     case friends
     case applications
     case requests
-    
+
     var title: String {
         switch self {
             case .friends:

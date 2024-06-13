@@ -13,11 +13,11 @@ protocol ProfileViewOutput: BaseViewOutput {
 }
 
 extension ProfilePresenter: ProfileViewOutput {
-    
+
     func viewDidLoaded() {
-        
+
     }
-    
+
     func themeModeSwitcherIsTapped(isOn: Bool) {
         interactor.darkThemeStateChanged(isOn: isOn)
     }

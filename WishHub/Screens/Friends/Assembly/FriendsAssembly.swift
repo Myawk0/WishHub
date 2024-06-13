@@ -15,20 +15,20 @@ class FriendsAssembly: BaseAssembly {
 		let interactor = FriendsInteractor()
 		let network = FriendsNetwork()
 		let localization = FriendsLocalization()
-        
+
 		view.presenter = presenter
 		view.localization = localization
-        
+
 		presenter.view = view
 		presenter.interactor = interactor
 		presenter.router = router
 		presenter.localization = localization
-        
+
 		interactor.presenter = presenter
 		interactor.data = data ?? FriendsData()
-		//interactor.storageManager = StorageManager.shared
+		// interactor.storageManager = StorageManager.shared
 		interactor.network = network
-        
+
 		return view
 	}
 }

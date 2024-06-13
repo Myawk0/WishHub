@@ -9,6 +9,6 @@ import Foundation
 
 class ApplicationsPageInteractor: BaseInteractor<ApplicationsPageData> {
 	weak var presenter: ApplicationsPageInteractorOutput!
-	//var storageManager: StorageManager!
+	// var storageManager: StorageManager!
 	var network: ApplicationsPageNetwork!
 }

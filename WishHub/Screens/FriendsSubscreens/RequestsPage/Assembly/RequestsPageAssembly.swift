@@ -16,20 +16,20 @@ class RequestsPageAssembly: BaseAssembly {
 		let interactor = RequestsPageInteractor()
 		let network = RequestsPageNetwork()
 		let localization = RequestsPageLocalization()
-        
+
 		view.presenter = presenter
 		view.localization = localization
-        
+
 		presenter.view = view
 		presenter.interactor = interactor
 		presenter.router = router
 		presenter.localization = localization
-        
+
 		interactor.presenter = presenter
 		interactor.data = data ?? RequestsPageData()
-		//interactor.storageManager = StorageManager.shared
+		// interactor.storageManager = StorageManager.shared
 		interactor.network = network
-        
+
 		return view
 	}
 }

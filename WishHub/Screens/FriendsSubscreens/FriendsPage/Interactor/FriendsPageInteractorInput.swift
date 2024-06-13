@@ -8,9 +8,9 @@
 import Foundation
 
 protocol FriendsPageInteractorInput: BaseInteractorInput {
-    
+
 }
 
 extension FriendsPageInteractor: FriendsPageInteractorInput {
-    
+
 }

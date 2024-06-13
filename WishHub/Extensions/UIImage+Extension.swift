@@ -15,7 +15,7 @@ extension UIImage {
         }
         return resizedImage
     }
-    
+
     func compressImage() -> Data {
         let newSize = CGSize(width: 150, height: 150)
         let resizedImage = self.resizeImage(size: newSize)

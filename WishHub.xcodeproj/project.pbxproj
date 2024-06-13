@@ -1022,6 +1022,7 @@
 				9068A28D2C11E7D800FBE63F /* Sources */,
 				9068A28E2C11E7D800FBE63F /* Frameworks */,
 				9068A28F2C11E7D800FBE63F /* Resources */,
+				904FC0CB2C1AFC7300D3494B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1064,7 +1065,6 @@
 			mainGroup = 9068A2882C11E7D800FBE63F;
 			packageReferences = (
 				904FBFAC2C15D2F800D3494B /* XCRemoteSwiftPackageReference "SnapKit" */,
-				904FBFD42C15DE1500D3494B /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 9068A2922C11E7D800FBE63F /* Products */;
@@ -1100,6 +1100,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		904FC0CB2C1AFC7300D3494B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9068A28D2C11E7D800FBE63F /* Sources */ = {
@@ -1365,6 +1386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTMA39LQ82;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WishHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1397,6 +1419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTMA39LQ82;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WishHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1451,14 +1474,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.7.1;
-			};
-		};
-		904FBFD42C15DE1500D3494B /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.55.1;
 			};
 		};
 		904FC0C52C1A282C00D3494B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {

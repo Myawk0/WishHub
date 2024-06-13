@@ -9,5 +9,5 @@ import Foundation
 
 class FriendsPageLocalization: BaseLocalization {
     var header: String { localize("header") }
-    //var: String { localize("") }
+    // var: String { localize("") }
 }

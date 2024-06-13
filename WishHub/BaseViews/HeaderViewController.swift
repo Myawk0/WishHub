@@ -9,17 +9,16 @@ import UIKit
 import SnapKit
 
 class HeaderViewController: UIView {
-    
+
     // MARK: Structs and enums
     enum ButtonAlignment {
         case left, right
     }
-    
+
     // MARK: Properties
     private var buttonWidth: CGFloat = 40.0
     private var leftButtons: [UIButton] = []
     private var rightButtons: [UIButton] = []
-
 
     // MARK: UI elements
     lazy var titleLabel: UILabel = {
@@ -29,7 +28,7 @@ class HeaderViewController: UIView {
 //        view.font =
         return view
     }()
-    
+
     private lazy var leftStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
@@ -38,7 +37,7 @@ class HeaderViewController: UIView {
         stack.distribution = .equalCentering
         return stack
     }()
-    
+
     private lazy var rightStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
@@ -47,8 +46,7 @@ class HeaderViewController: UIView {
         stack.distribution = .equalCentering
         return stack
     }()
-    
-    
+
     // MARK: Properties
     var height: CGFloat = 0 {
         didSet {
@@ -59,38 +57,36 @@ class HeaderViewController: UIView {
             }
         }
     }
-    
+
     var title: String {
         get { titleLabel.text ?? "" }
         set { titleLabel.text = newValue }
     }
-    
-    
+
     // MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
         setupSubviews()
         addConstraints()
-        
+
         titleLabel.textColor = .black
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
+
     // MARK: Override method
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let view = super.hitTest(point, with: event)
         return view == self ? nil : view
     }
-    
-    //MARK: - TitleLable functionality
+
+    // MARK: - TitleLable functionality
     private var titleTappableText: String = ""
     private var whatToDoWhenTappOnTappableText: (() -> Void)?
-    
+
     public func setTapOnTextOfLabel(text: String, closure: @escaping (() -> Void)) {
         titleTappableText = text
         whatToDoWhenTappOnTappableText = closure
@@ -98,7 +94,7 @@ class HeaderViewController: UIView {
         titleLabel.addGestureRecognizer(gesture)
         titleLabel.isUserInteractionEnabled = true
     }
-    
+
     @objc private func tapLabel(gesture: UITapGestureRecognizer) {
 //        guard let text = titleLabel.text else { return }
 //        let textRange = (text as NSString).range(of: titleTappableText)
@@ -108,7 +104,6 @@ class HeaderViewController: UIView {
 //        }
     }
 
-    
 //    @discardableResult
 //    func addButton(image: UIImage, type: ButtonAlignment, onTap: ((BaseButton)->())? = nil) -> BaseButton {
 //        
@@ -130,7 +125,7 @@ class HeaderViewController: UIView {
 //        }
 //        return button
 //    }
-    
+
 //    @discardableResult
 //    func addButton(title: String, font: UIFont, titleColor: UIColor, type: ButtonAlignment, onTap: ((BaseButton)->())? = nil) -> BaseButton {
 //        
@@ -154,13 +149,13 @@ class HeaderViewController: UIView {
 //        }
 //        return button
 //    }
-    
-    private func setupSubviews(){
+
+    private func setupSubviews() {
         addSubview(titleLabel)
         addSubview(leftStack)
         addSubview(rightStack)
     }
-    
+
     private func addConstraints() {
         titleLabel.snp.makeConstraints { make in
             make.right.equalTo(rightStack.snp.left)

@@ -8,13 +8,13 @@
 import Foundation
 
 class Localizable: BaseLocalization {
-    
+
     enum TabBarItem {
         static var wishlistsText: String { ("wishlistsText".localize) }
         static var friendsText: String { ("friendsText".localize) }
         static var profileText: String { ("profileText".localize) }
     }
-    
+
     enum SegmentedButton {
         static var applicationsText: String { ("applicationsText".localize) }
         static var requestsText: String { ("requestsText".localize) }
@@ -28,7 +28,7 @@ class Localizable: BaseLocalization {
         static var cancelButtonText: String { ("cancelButtonText".localize) }
         static var openSettingsButtonText: String { ("openSettingsButtonText".localize) }
     }
-    
+
     enum UserDataItem {
         static var presentsText: String { ("presentsText".localize) }
         static var friendsText: String { ("friendsText".localize) }

@@ -16,7 +16,7 @@ extension BasePresenter: InternetConnectionProtocol {
         hasNetworkAccess = true
         print("onConnection")
     }
-    
+
     func onDisconnection() {
         print("onDisconnection")
         hasNetworkAccess = false

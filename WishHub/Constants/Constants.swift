@@ -8,6 +8,6 @@
 import Foundation
 
 enum Constants {
-    
+
     static let tabBarHeight: CGFloat = 90
 }

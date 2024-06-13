@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class ApplicationsPagePresenter: BasePresenter {
     weak var view: ApplicationsPageViewInput!
     var interactor: ApplicationsPageInteractorInput!

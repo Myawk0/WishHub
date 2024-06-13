@@ -11,7 +11,7 @@ enum TabBarItemType: CaseIterable {
     case friends
     case wishlists
     case profile
-    
+
     var itemTitle: String {
         switch self {
             case .friends:
@@ -22,7 +22,7 @@ enum TabBarItemType: CaseIterable {
                 return Localizable.TabBarItem.profileText
         }
     }
-    
+
     var parentController: BaseViewController {
         switch self {
             case .friends:
@@ -33,7 +33,7 @@ enum TabBarItemType: CaseIterable {
                 return ProfileAssembly.assemble()
         }
     }
-    
+
     var itemImage: UIImage? {
         switch self {
             case .friends:
@@ -44,7 +44,7 @@ enum TabBarItemType: CaseIterable {
                 return Images.TabBarItem.profile
         }
     }
-    
+
     var itemSelectedImage: UIImage? {
         switch self {
             case .friends:

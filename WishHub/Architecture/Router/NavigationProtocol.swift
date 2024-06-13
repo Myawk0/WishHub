@@ -10,15 +10,15 @@ import UIKit
 protocol NavigationProtocol: NSObject {
     var topViewController: UIViewController? { get }
     var rootViewController: UIViewController? { get }
-    func presentOrPush(viewController: UIViewController, removeCurrent: Bool, animated: Bool, _ completion: (() -> ())?)
-    func dismissOrPop(animated: Bool, _ completion: (() -> ())?)
-    func presentModal(viewController: UIViewController, animated: Bool, _ completion: (() -> ())?)
+    func presentOrPush(viewController: UIViewController, removeCurrent: Bool, animated: Bool, _ completion: (() -> Void)?)
+    func dismissOrPop(animated: Bool, _ completion: (() -> Void)?)
+    func presentModal(viewController: UIViewController, animated: Bool, _ completion: (() -> Void)?)
     func popToRootViewController(animated: Bool)
     func changeTransitionAnimation(type: CATransitionType, subtype: CATransitionSubtype?)
 }
 
 extension NavigationProtocol where Self: UIResponder {
-    
+
     private static var keyWindow: UIWindow? {
         return UIApplication.shared.connectedScenes
             .filter({$0.activationState == .foregroundActive})
@@ -27,15 +27,15 @@ extension NavigationProtocol where Self: UIResponder {
             .first?.windows
             .filter({$0.isKeyWindow}).first
     }
-    
+
     var topViewController: UIViewController? {
         return topViewController()
     }
-    
+
     var rootViewController: UIViewController? {
         return UIApplication.shared.keyWindow?.rootViewController
     }
-    
+
     private func topViewController(controller: UIViewController? = Self.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewController(controller: navigationController.visibleViewController)
@@ -50,18 +50,18 @@ extension NavigationProtocol where Self: UIResponder {
         }
         return controller
     }
-    
-    func dismissOrPop(animated: Bool = true, _ completion: (() -> ())? = nil){
+
+    func dismissOrPop(animated: Bool = true, _ completion: (() -> Void)? = nil) {
         if let topVc = topViewController() {
-            if topVc.isModal{
+            if topVc.isModal {
                 topVc.dismiss(animated: animated, completion: completion)
             } else {
                 topVc.navigationController?.popViewController(animated: animated)
             }
         }
     }
-    
-    func presentOrPush(viewController: UIViewController, removeCurrent: Bool = false, animated: Bool = true, _ completion: (() -> ())? = nil){
+
+    func presentOrPush(viewController: UIViewController, removeCurrent: Bool = false, animated: Bool = true, _ completion: (() -> Void)? = nil) {
         if let topViewController = topViewController() {
             if topViewController.isModal {
                 topViewController.present(viewController, animated: animated, completion: completion)
@@ -72,7 +72,7 @@ extension NavigationProtocol where Self: UIResponder {
             }
         }
     }
-    
+
     func removeFromStack(_ position: Int) {
         if let topViewController = topViewController() {
             guard let count = topViewController.navigationController?.viewControllers.count, count > position else {
@@ -81,28 +81,27 @@ extension NavigationProtocol where Self: UIResponder {
             topViewController.navigationController?.viewControllers.remove(at: position)
         }
     }
-    
-    func presentModal(viewController: UIViewController, animated: Bool = true, _ completion: (() -> ())? = nil){
+
+    func presentModal(viewController: UIViewController, animated: Bool = true, _ completion: (() -> Void)? = nil) {
         if let topViewController = topViewController() {
             topViewController.present(viewController, animated: animated, completion: completion)
         }
     }
-    
+
     func popToRootViewController(animated: Bool) {
         if let topViewController = topViewController() {
             topViewController.navigationController?.popToRootViewController(animated: animated)
         }
     }
-    
+
     func changeTransitionAnimation(type: CATransitionType, subtype: CATransitionSubtype? = .fromLeft) {
         if let topViewController = topViewController() {
             let transition = CATransition()
             transition.duration = 0.3
             transition.type = type
             transition.subtype = subtype
-            
+
             topViewController.navigationController?.view.layer.add(transition, forKey: kCATransition)
         }
     }
 }
-

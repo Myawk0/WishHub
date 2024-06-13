@@ -11,7 +11,7 @@ enum UserDataItem: CaseIterable {
     case presents
     case friends
     case subscribers
-    
+
     var title: String {
         switch self {
             case .presents:
