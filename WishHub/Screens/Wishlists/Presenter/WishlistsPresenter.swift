@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class WishlistsPresenter: BasePresenter {
     weak var view: WishlistsViewInput!
     var interactor: WishlistsInteractorInput!

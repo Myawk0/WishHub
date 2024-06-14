@@ -117,7 +117,6 @@
 		904FC0AC2C17345600D3494B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */; };
 		904FC0AE2C17425C00D3494B /* CustomSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */; };
 		904FC0B02C17427E00D3494B /* ProfileMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */; };
-		904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B42C17478900D3494B /* UserDataCollectionView.swift */; };
 		904FC0B82C174C4100D3494B /* UserDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */; };
 		904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */; };
 		904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904FC0BE2C19FC1000D3494B /* UserDataItem.swift */; };
@@ -141,6 +140,12 @@
 		90C742042C1C8CE900F3D3B3 /* WishlistsLocalization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90C741F62C1C8CE900F3D3B3 /* WishlistsLocalization.strings */; };
 		90C742052C1C8CE900F3D3B3 /* WishlistsLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C741F72C1C8CE900F3D3B3 /* WishlistsLocalization.swift */; };
 		90C742062C1C8CE900F3D3B3 /* WishlistsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C741F92C1C8CE900F3D3B3 /* WishlistsRouter.swift */; };
+		90C7420D2C1C91A300F3D3B3 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C742072C1C91A300F3D3B3 /* BaseButton.swift */; };
+		90C7420E2C1C91A300F3D3B3 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C742082C1C91A300F3D3B3 /* BaseTextView.swift */; };
+		90C7420F2C1C91A300F3D3B3 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C742092C1C91A300F3D3B3 /* BaseCollectionView.swift */; };
+		90C742102C1C91A300F3D3B3 /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7420A2C1C91A300F3D3B3 /* BaseCollectionCell.swift */; };
+		90C742112C1C91A300F3D3B3 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7420B2C1C91A300F3D3B3 /* BaseTextField.swift */; };
+		90C742202C1CAAA000F3D3B3 /* UserDataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7421C2C1CAAA000F3D3B3 /* UserDataCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -253,7 +258,6 @@
 		904FC0AB2C17345600D3494B /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		904FC0AD2C17425C00D3494B /* CustomSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitcher.swift; sourceTree = "<group>"; };
 		904FC0AF2C17427E00D3494B /* ProfileMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuItem.swift; sourceTree = "<group>"; };
-		904FC0B42C17478900D3494B /* UserDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionView.swift; sourceTree = "<group>"; };
 		904FC0B72C174C4100D3494B /* UserDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionViewCell.swift; sourceTree = "<group>"; };
 		904FC0BC2C19047E00D3494B /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
 		904FC0BE2C19FC1000D3494B /* UserDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataItem.swift; sourceTree = "<group>"; };
@@ -279,6 +283,12 @@
 		90C741F62C1C8CE900F3D3B3 /* WishlistsLocalization.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = WishlistsLocalization.strings; sourceTree = "<group>"; };
 		90C741F72C1C8CE900F3D3B3 /* WishlistsLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistsLocalization.swift; sourceTree = "<group>"; };
 		90C741F92C1C8CE900F3D3B3 /* WishlistsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishlistsRouter.swift; sourceTree = "<group>"; };
+		90C742072C1C91A300F3D3B3 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		90C742082C1C91A300F3D3B3 /* BaseTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		90C742092C1C91A300F3D3B3 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		90C7420A2C1C91A300F3D3B3 /* BaseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
+		90C7420B2C1C91A300F3D3B3 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		90C7421C2C1CAAA000F3D3B3 /* UserDataCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +463,11 @@
 		904FBFA92C15D29E00D3494B /* BaseViews */ = {
 			isa = PBXGroup;
 			children = (
+				90C742072C1C91A300F3D3B3 /* BaseButton.swift */,
+				90C7420A2C1C91A300F3D3B3 /* BaseCollectionCell.swift */,
+				90C742092C1C91A300F3D3B3 /* BaseCollectionView.swift */,
+				90C7420B2C1C91A300F3D3B3 /* BaseTextField.swift */,
+				90C742082C1C91A300F3D3B3 /* BaseTextView.swift */,
 				904FBFAA2C15D2AC00D3494B /* HeaderViewController.swift */,
 			);
 			path = BaseViews;
@@ -949,18 +964,18 @@
 		904FC0B22C17474F00D3494B /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				904FC0B32C17475F00D3494B /* UserDataCollectionView */,
+				904FC0B32C17475F00D3494B /* UserDataCollection */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
 		};
-		904FC0B32C17475F00D3494B /* UserDataCollectionView */ = {
+		904FC0B32C17475F00D3494B /* UserDataCollection */ = {
 			isa = PBXGroup;
 			children = (
 				904FC0B62C174C2700D3494B /* Cell */,
-				904FC0B42C17478900D3494B /* UserDataCollectionView.swift */,
+				90C7421C2C1CAAA000F3D3B3 /* UserDataCollection.swift */,
 			);
-			path = UserDataCollectionView;
+			path = UserDataCollection;
 			sourceTree = "<group>";
 		};
 		904FC0B62C174C2700D3494B /* Cell */ = {
@@ -1230,7 +1245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\n\nif [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1239,6 +1254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C742202C1CAAA000F3D3B3 /* UserDataCollection.swift in Sources */,
 				904FBFB72C15D90B00D3494B /* UIViewController+Extension.swift in Sources */,
 				904FBFCA2C15DBD200D3494B /* BasePresenter.swift in Sources */,
 				904FC0BF2C19FC1000D3494B /* UserDataItem.swift in Sources */,
@@ -1276,16 +1292,17 @@
 				904FC0792C167B5E00D3494B /* RequestsPageRouter.swift in Sources */,
 				90C741FF2C1C8CE900F3D3B3 /* WishlistsViewInput.swift in Sources */,
 				904FC02D2C167A8B00D3494B /* FriendsPageLocalization.swift in Sources */,
-				904FC0B52C17478900D3494B /* UserDataCollectionView.swift in Sources */,
 				9068A2952C11E7D800FBE63F /* AppDelegate.swift in Sources */,
 				904FC0BD2C19047E00D3494B /* Notification.Name+Extension.swift in Sources */,
 				904FC0952C1703EF00D3494B /* ProfileViewInput.swift in Sources */,
 				90C742062C1C8CE900F3D3B3 /* WishlistsRouter.swift in Sources */,
+				90C742112C1C91A300F3D3B3 /* BaseTextField.swift in Sources */,
 				904FC0042C1633FF00D3494B /* UIView+Extension.swift in Sources */,
 				904FBF8F2C15C6D000D3494B /* FriendsData.swift in Sources */,
 				904FC02C2C167A8B00D3494B /* FriendsPageInteractorOutput.swift in Sources */,
 				904FBF9B2C15C7B400D3494B /* String+Extension.swift in Sources */,
 				904FBFF12C161EE600D3494B /* SegmentedButton.swift in Sources */,
+				90C7420F2C1C91A300F3D3B3 /* BaseCollectionView.swift in Sources */,
 				904FBFBC2C15DA1000D3494B /* BaseInteractorInput.swift in Sources */,
 				90C742052C1C8CE900F3D3B3 /* WishlistsLocalization.swift in Sources */,
 				90C741FC2C1C8CE900F3D3B3 /* WishlistsNetwork.swift in Sources */,
@@ -1300,6 +1317,7 @@
 				904FC04E2C167B0900D3494B /* ApplicationsPageData.swift in Sources */,
 				904FC0712C167B5E00D3494B /* RequestsPageViewOutput.swift in Sources */,
 				904FBF8C2C15C6D000D3494B /* FriendsViewController.swift in Sources */,
+				90C742102C1C91A300F3D3B3 /* BaseCollectionCell.swift in Sources */,
 				904FBF952C15C6D000D3494B /* FriendsRouter.swift in Sources */,
 				904FC0272C167A8B00D3494B /* FriendsPageViewOutput.swift in Sources */,
 				904FBFC32C15DAAD00D3494B /* NavigationProtocol.swift in Sources */,
@@ -1343,8 +1361,10 @@
 				904FC0AE2C17425C00D3494B /* CustomSwitcher.swift in Sources */,
 				904FC0B02C17427E00D3494B /* ProfileMenuItem.swift in Sources */,
 				904FC0AC2C17345600D3494B /* ProfileTableViewCell.swift in Sources */,
+				90C7420E2C1C91A300F3D3B3 /* BaseTextView.swift in Sources */,
 				904FBF9D2C15C7EE00D3494B /* NSObject+Extension.swift in Sources */,
 				904FC0512C167B0900D3494B /* ApplicationsPageInteractorOutput.swift in Sources */,
+				90C7420D2C1C91A300F3D3B3 /* BaseButton.swift in Sources */,
 				904FC04C2C167B0900D3494B /* ApplicationsPageViewOutput.swift in Sources */,
 				904FBFA82C15D23B00D3494B /* KeyboardSensitiveConstraints.swift in Sources */,
 				904FC0252C167A8B00D3494B /* FriendsPageNetwork.swift in Sources */,

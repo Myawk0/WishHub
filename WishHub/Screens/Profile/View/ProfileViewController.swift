@@ -79,8 +79,8 @@ class ProfileViewController: BaseViewController {
         return stackView
     }()
 
-    private lazy var userDataCollectionView: UserDataCollectionView = {
-        let collectionView = UserDataCollectionView()
+    private lazy var userDataCollectionView: UserDataCollection = {
+        let collectionView = UserDataCollection()
         return collectionView
     }()
 
@@ -102,6 +102,7 @@ class ProfileViewController: BaseViewController {
         setupUI()
         setupThemeSwitcher()
         presenter.viewDidLoaded()
+        setupUserData()
     }
 
     // MARK: - настройка UI
@@ -185,4 +186,10 @@ class ProfileViewController: BaseViewController {
     }
 
     // MARK: - методы и функции
+    
+    func setupUserData() {
+        userDataCollectionView.data = UserDataItem.allCases.map { item in
+            return UserDataCollectionCell.Data(item: item, value: 0)
+        }
+    }
 }

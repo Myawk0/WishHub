@@ -13,4 +13,7 @@ class WishlistsNetwork: BaseNetwork {
 //        API.REQUEST_NAME(model).request()
 //    }
 
+    func request() {
+        
+    }
 }

@@ -62,4 +62,28 @@ extension UIView {
                 layer.maskedCorners = []
         }
     }
+    
+    func tapAnimation(scaleTo: CGFloat = 0.95, completionBlock: @escaping () -> Void) {
+        isUserInteractionEnabled = false
+        animateScale(to: scaleTo) { [weak self] in
+            self?.animateScale(to: 1.0) {
+                self?.isUserInteractionEnabled = true
+                completionBlock()
+            }
+        }
+    }
+    
+    private func animateScale(to scale: CGFloat, completion: @escaping () -> Void) {
+        UIView.animate(
+            withDuration: 0.1,
+            delay: 0,
+            options: .curveLinear,
+            animations: { [weak self] in
+                self?.transform = CGAffineTransform(scaleX: scale, y: scale)
+            },
+            completion: { _ in
+                completion()
+            }
+        )
+    }
 }

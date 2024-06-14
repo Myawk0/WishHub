@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct WishlistsData {
-
-}
+struct WishlistsData {}

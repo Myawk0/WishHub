@@ -9,5 +9,4 @@ import Foundation
 
 class WishlistsLocalization: BaseLocalization {
     var header: String { localize("header") }
-    var: String { localize("") }
 }

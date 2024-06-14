@@ -10,29 +10,23 @@ import UIKit
 
 class WishlistsViewController: BaseViewController {
     
-
-    //MARK: - архитектура
+    // MARK: - архитектура
     var localization: WishlistsLocalization!
     var presenter: WishlistsViewOutput!
 
+    // MARK: - структуры и перечисления
 
-    //MARK: - структуры и перечисления
+    // MARK: - элементы UI
 
+    // MARK: - переменные
 
-    //MARK: - элементы UI
-
-
-    //MARK: - переменные
-
-
-    //MARK: - жизненный цикл контроллера
+    // MARK: - жизненный цикл контроллера
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
 
-
-    //MARK: - настройка UI
+    // MARK: - настройка UI
     func setupUI() {
         addSubviews()
         makeConstraints()
@@ -46,5 +40,5 @@ class WishlistsViewController: BaseViewController {
 
     }
     
-    //MARK: - методы и функции
+    // MARK: - методы и функции
 }

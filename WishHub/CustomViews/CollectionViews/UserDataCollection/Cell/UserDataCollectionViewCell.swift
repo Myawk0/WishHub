@@ -1,5 +1,5 @@
 //
-//  UserDataCollectionViewCell.swift
+//  UserDataCollectionCell.swift
 //  WishHub
 //
 //  Created by Мявкo on 10.06.24.
@@ -7,7 +7,13 @@
 
 import UIKit
 
-class UserDataCollectionViewCell: UICollectionViewCell {
+class UserDataCollectionCell: BaseCollectionCell {
+    
+    // MARK: Structs and enums
+    struct Data {
+        let item: UserDataItem
+        var value: Int
+    }
 
     // MARK: UI elements
     private lazy var stackView: UIStackView = {
@@ -20,9 +26,9 @@ class UserDataCollectionViewCell: UICollectionViewCell {
     private lazy var countLabel: UILabel = {
         let label = UILabel()
         label.font = Fonts.Label.big
-        label.text = "0"
         label.textColor = .ghostWhite
         label.textAlignment = .center
+        label.text = "123"
         return label
     }()
 
@@ -41,15 +47,17 @@ class UserDataCollectionViewCell: UICollectionViewCell {
     }()
 
     // MARK: Properties
-    var userData: UserDataItem! {
+
+    var data: Data! {
         didSet {
-            titleLabel.text = userData.title
-            separatorView.isHidden = userData == .subscribers
+            countLabel.text = "\(data.value)"
+            titleLabel.text = data.item.title
+            separatorView.isHidden = data.item == .subscribers
         }
     }
 
     // MARK: Init
-    override init(frame: CGRect) {
+    override init(frame: CGRect = CGRect.zero) {
         super.init(frame: frame)
         setupUI()
     }
